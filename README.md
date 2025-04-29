@@ -10,4 +10,4 @@ Import the uscMaps archive file into eclipse.
 
 Start server like we did for assignment3, have index.html be the homepage with the map and login/registration.
 
-Run the SQL script located inside the uscMap folder you downloaded
+Download the CreateUSCMapDatabase SQL script from this repo and run it
