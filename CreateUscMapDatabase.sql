@@ -28,6 +28,8 @@ CREATE TABLE userInfo(
 
 CREATE TABLE locations(
     locationID int auto_increment primary key,
+    name varchar(256),
+    category varchar(256),
     address varchar(256),
     lattitude decimal(9,6),
     longitude decimal(9,6)
