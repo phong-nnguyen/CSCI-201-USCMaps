@@ -13,8 +13,8 @@
       Welcome to <span class="bold-title">TrojanMap</span>
     </h2>
     <form id="login-form" class="login-form">
-      <input type="text" placeholder="Email Address" id="email" required />
-      <input type="password" placeholder="Password" id="password" required />
+      <input type="text" placeholder="Username" id="user" required />
+      <input type="password" placeholder="Password" id="pass" required />
       <div class="link-row">
         <a href="register.html" class="link-text">Create an account</a>
       </div>
@@ -26,18 +26,29 @@
   <script>
     document.getElementById("login-form").addEventListener("submit", async function(e) {
       e.preventDefault();
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
+      const user = document.getElementById("user").value;
+      const pass = document.getElementById("pass").value;
       const messageElem = document.getElementById("message");
 
       try {
-        const params = new URLSearchParams({ log: 'Login', email, password});
-        const res = await fetch(`http://localhost:8080/trojanMaps/loginPageBackend?${params.toString()}`);
+        const params = new URLSearchParams({ log: 'Login', user, pass });
+        const res = await fetch(`/trojanMaps_Philbert/loginPageBackend?${params.toString()}`);
         const text = await res.text();
         messageElem.textContent = text;
-        window.location="index.html";
+        
+        if (text.trim() === 'Success') {
+          messageElem.style.color = 'green';
+          localStorage.setItem('loggedInUser', user);
+          setTimeout(() => {
+            window.location.href = './index.html';
+          }, 1000);
+        } else {
+          messageElem.style.color = 'red';
+        }
       } catch (err) {
         messageElem.textContent = 'Error connecting to server.';
+        messageElem.style.color = 'red';
+        console.error('Login error:', err);
       }
     });
   </script>

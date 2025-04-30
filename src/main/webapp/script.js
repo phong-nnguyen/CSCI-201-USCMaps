@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check login status immediately when page loads
+    checkLoginStatus();
+    
     // Search functionality
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
 
-    searchButton.addEventListener('click', handleSearch);
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            handleSearch();
-        }
-    });
+    if (searchInput && searchButton) {
+        searchButton.addEventListener('click', handleSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
+            }
+        });
+    }
 
     async function handleSearch() {
         const query = searchInput.value.trim();
@@ -46,6 +51,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error during search:', error);
                 alert('An error occurred during the search. Please try again.');
             }
+        }
+    }
+
+    // Login status and logout functionality
+    function checkLoginStatus() {
+        console.log('Checking login status...');
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        console.log('Logged in user:', loggedInUser);
+        
+        const authLinks = document.querySelectorAll('.auth-links');
+        const userWelcome = document.querySelector('.user-welcome');
+        const logoutLink = document.querySelector('.logout-link');
+        const usernameSpan = document.getElementById('username');
+        
+        if (loggedInUser) {
+            // User is logged in
+            console.log('User is logged in as:', loggedInUser);
+            if (authLinks) authLinks.forEach(link => link.style.display = 'none');
+            if (userWelcome) userWelcome.style.display = 'inline-block';
+            if (logoutLink) logoutLink.style.display = 'inline-block';
+            if (usernameSpan) usernameSpan.textContent = loggedInUser;
+            
+            // Set up logout functionality
+            const logoutBtn = document.getElementById('logout-btn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    localStorage.removeItem('loggedInUser');
+                    window.location.reload();
+                });
+            }
+        } else {
+            // User is not logged in
+            console.log('User is not logged in');
+            if (authLinks) authLinks.forEach(link => link.style.display = 'inline-block');
+            if (userWelcome) userWelcome.style.display = 'none';
+            if (logoutLink) logoutLink.style.display = 'none';
         }
     }
 

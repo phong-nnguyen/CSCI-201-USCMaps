@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TrojanMap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Images/Logos/TrojanMap_White_Logo.png">
+</head>
+<body>
+    <!-- Top bar / menu -->
+    <div id="topbar">
+        <div class="topbar-left">
+            <img id="topbar-logo" src="./Images/Logos/TrojanMap_White_Logo.png" alt="USC Logo" onerror="this.src='/api/placeholder/40/40';this.alt='USC Logo';">
+            <div id="topbar-text">TrojanMap</div>
+            <div class="nav-links">
+                <div class="nav-link">Home</div>
+                <div class="nav-link">Directory</div>
+            </div>
+        </div>
+        <div class="profile-container">
+            <div class="profile-icon" id="profile-icon">
+                <img src="./Images/Profile/Default_Profile_Icon.webp" alt="Profile">
+            </div>
+            <div class="profile-dropdown" id="profile-dropdown">
+                <div class="dropdown-item">Profile</div>
+                <div class="dropdown-item">Settings</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div id="sidebar">
+<!--            <div id="logo-container">-->
+<!--                <img id="logo" src="TrojanMap_Logo.png" alt="USC Logo" onerror="this.src='/api/placeholder/60/60';this.alt='USC Logo';">-->
+<!--                <div id="logo-text">TrojanMap</div>-->
+<!--            </div>-->
+
+            <div class="input-card">
+                <div class="greeting">Hey, {fname + lname}!</div>
+                <div class="prompt">Where do you want to go?</div>
+
+                <div class="location-input-group">
+                    <input id="origin" class="location-input" type="text" placeholder="Beginning">
+                    <button id="origin-location" class="location-button-small">&#128205;</button>
+                    <div class="dropdown-arrow">&#9660;</div>
+                    <div class="location-dropdown" id="origin-dropdown">
+                        <div class="dropdown-item" data-value="Tommy Trojan Statue, Los Angeles, CA">Tommy Trojan</div>
+                        <div class="dropdown-item" data-value="USC Village, Los Angeles, CA">USC Village</div>
+                        <div class="dropdown-item" data-value="Doheny Memorial Library, Los Angeles, CA">Doheny Library</div>
+                        <div class="dropdown-item" data-value="USC Viterbi School of Engineering, Los Angeles, CA">Viterbi Engineering</div>
+                        <div class="dropdown-item" data-value="USC Marshall School of Business, Los Angeles, CA">Marshall Business</div>
+                        <div class="dropdown-item" data-value="USC School of Cinematic Arts, Los Angeles, CA">Cinematic Arts</div>
+                        <div class="dropdown-item" data-value="USC Annenberg School, Los Angeles, CA">Annenberg School</div>
+                        <div class="dropdown-item" data-value="Galen Center, Los Angeles, CA">Galen Center</div>
+                        <div class="dropdown-item" data-value="Los Angeles Memorial Coliseum, Los Angeles, CA">LA Coliseum</div>
+                        <div class="dropdown-item" data-value="USC Keck School of Medicine, Los Angeles, CA">Keck Medicine</div>
+                    </div>
+                </div>
+
+                <div class="location-input-group">
+                    <input id="destination" class="location-input" type="text" placeholder="Destination">
+                    <button id="destination-location" class="location-button-small">&#128205;</button>
+                    <div class="dropdown-arrow">&#9660;</div>
+                    <div class="location-dropdown" id="destination-dropdown">
+                        <div class="dropdown-item" data-value="Tommy Trojan Statue, Los Angeles, CA">Tommy Trojan</div>
+                        <div class="dropdown-item" data-value="USC Village, Los Angeles, CA">USC Village</div>
+                        <div class="dropdown-item" data-value="Doheny Memorial Library, Los Angeles, CA">Doheny Library</div>
+                        <div class="dropdown-item" data-value="USC Viterbi School of Engineering, Los Angeles, CA">Viterbi Engineering</div>
+                        <div class="dropdown-item" data-value="USC Marshall School of Business, Los Angeles, CA">Marshall Business</div>
+                        <div class="dropdown-item" data-value="USC School of Cinematic Arts, Los Angeles, CA">Cinematic Arts</div>
+                        <div class="dropdown-item" data-value="USC Annenberg School, Los Angeles, CA">Annenberg School</div>
+                        <div class="dropdown-item" data-value="Galen Center, Los Angeles, CA">Galen Center</div>
+                        <div class="dropdown-item" data-value="Los Angeles Memorial Coliseum, Los Angeles, CA">LA Coliseum</div>
+                        <div class="dropdown-item" data-value="USC Keck School of Medicine, Los Angeles, CA">Keck Medicine</div>
+                    </div>
+                </div>
+                <button id="calculate-route" class="action-button go-button">Go</button>
+            </div>
+
+            <div id="route-info" class="route-info"></div>
+            <div id="directions-panel"></div>
+
+            <!-- Container for print content -->
+            <div id="print-container" style="display: none;"></div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <!-- Load the Google Maps JavaScript API with Places library -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGIPlUnED-AeiAjI7oZaQm6WDPzpSpMPg&libraries=places&callback=initMap">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html> 
