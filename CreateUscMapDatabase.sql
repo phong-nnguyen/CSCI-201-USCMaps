@@ -1,16 +1,18 @@
+DROP DATABASE IF EXISTS trojanMapsDB;
+
 -- Disable foreign key checks
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- Main database
-CREATE DATABASE IF NOT EXISTS trojanMapsDB;
+CREATE DATABASE trojanMapsDB;
 USE trojanMapsDB;
 
--- Drop tables in any order
-DROP TABLE IF EXISTS userPins;
-DROP TABLE IF EXISTS userInfo;
-DROP TABLE IF EXISTS locations;
-DROP TABLE IF EXISTS googleMapKey;
-DROP TABLE IF EXISTS userFriendGroup;
+-- -- Drop tables in any order
+-- DROP TABLE IF EXISTS userPins;
+-- DROP TABLE IF EXISTS userInfo;
+-- DROP TABLE IF EXISTS locations;
+-- DROP TABLE IF EXISTS googleMapKey;
+-- DROP TABLE IF EXISTS userFriendGroup;
 
 -- Enable foreign key checks again
 SET FOREIGN_KEY_CHECKS = 1;
