@@ -239,9 +239,10 @@ public class USCLocationScraper {
                 // Only save if geocoded (lat/lon not 0.0 - adjust if 0,0 is valid)
                 if (loc.latitude != 0.0 || loc.longitude != 0.0) {
                     boolean exists = false;
+                    // Set parameters BEFORE executing the query
+                    checkStmt.setString(1, loc.code);
+                    checkStmt.setString(2, loc.address);
                     try (ResultSet rs = checkStmt.executeQuery()) { // Check existence
-                         checkStmt.setString(1, loc.code);
-                         checkStmt.setString(2, loc.address);
                          exists = rs.next(); // See if we get any result
                     } catch (SQLException e) {
                         System.err.println("DB Check Error for " + loc.code + ": " + e.getMessage());
