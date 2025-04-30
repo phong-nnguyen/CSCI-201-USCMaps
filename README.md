@@ -1,7 +1,7 @@
 (Someone write the readme for launching the React server if we are using one)
 
 Import the uscMaps archive file into eclipse.
-1. Download uscMap.zip
+1. Download trojanMaps.zip
 2. Go to Eclipse
 3. Click on File -> Import
 4. Select Existing Projects into Workspace
