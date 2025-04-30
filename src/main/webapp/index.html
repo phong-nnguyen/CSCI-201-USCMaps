@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USC Campus Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.usc.edu/wp-content/themes/usc-2015/assets/img/usc-logo.svg" alt="USC Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>USC Campus Map</h1>
+            <p>Navigate the University of Southern California campus with ease</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for buildings, departments, or locations...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cta-buttons">
+                <button class="primary-btn" onclick="location.href='#map'">View Map</button>
+                <button class="secondary-btn" onclick="location.href='#about'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Interactive Map</h3>
+            <p>Explore USC's campus with our detailed interactive map</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-search-location"></i>
+            <h3>Quick Search</h3>
+            <p>Find any building or location on campus instantly</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-route"></i>
+            <h3>Navigation</h3>
+            <p>Get directions to your destination</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

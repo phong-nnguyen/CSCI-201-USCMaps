@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - TrojanMap</title>
+  <link rel="stylesheet" href="LoginPage.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="image 2.png" alt="USC Logo" class="usc-logo" />
+    <h2 class="welcome-title">
+      Welcome to <span class="bold-title">TrojanMap</span>
+    </h2>
+    <form id="login-form" class="login-form">
+      <input type="text" placeholder="Email Address" id="email" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <div class="link-row">
+        <a href="register.html" class="link-text">Create an account</a>
+      </div>
+      <button type="submit" class="login-btn">Log in</button>
+    </form>
+    <p id="message" class="error-msg"></p>
+  </div>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const messageElem = document.getElementById("message");
+
+      try {
+        const params = new URLSearchParams({ log: 'Login', email, password});
+        const res = await fetch(`http://localhost:8080/trojanMaps/loginPageBackend?${params.toString()}`);
+        const text = await res.text();
+        messageElem.textContent = text;
+        window.location="index.html";
+      } catch (err) {
+        messageElem.textContent = 'Error connecting to server.';
+      }
+    });
+  </script>
+</body>
+</html>
