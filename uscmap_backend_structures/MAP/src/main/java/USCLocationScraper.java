@@ -1,61 +1,54 @@
-package main.java; // Your package
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.json.JSONException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.io.BufferedReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.ResultSet;
+import java.lang.reflect.Type;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.JsonSyntaxException;
+
 
 public class USCLocationScraper {
 
-    // Holds the location data
+    // holds location data
     public static class LocationData {
         String code;
         String name;
         String address;
-        double latitude = 0.0; // Default to 0
-        double longitude = 0.0;
+        double lat = 0.0; // default 0
+        double lng = 0.0;
 
-        public LocationData(String code, String name, String address) {
+        // constructor
+        public LocationData(String code, String name, String address, double lat, double lng) {
             this.code = code;
             this.name = name;
             this.address = address;
+            this.lat = lat;
+            this.lng = lng;
         }
+
+        // default constructor for gson
+        public LocationData() {}
 
         @Override
         public String toString() {
-            // Simple string representation
-            return String.format("%s: %s @ (%f, %f)", code, address, latitude, longitude);
+            // simple string representation
+            return String.format("%s: %s @ (%f, %f)", code, address, lat, lng);
         }
     }
 
-    // --- Config --- 
-    // !! CHANGE THESE !!
-    private static final String USC_DIRECTORY_URL = "YOUR_USC_DIRECTORY_URL"; // page with the building list idk which
-    private static final String GOOGLE_API_KEY = "YOUR_GOOGLE_GEOCODING_API_KEY"; //the Google API key
-    private static final String GEOCODING_API_URL = "https://maps.googleapis.com/maps/api/geocode/json?";
 
-    // DB stuff - check these match the setup
+    // db stuff - check these match setup
     private static final String DB_URL = "jdbc:mysql://localhost:3306/lab_09";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "root"; 
+    private static final String DB_PASSWORD = "root";
     private static final String DB_TABLE = "Location";
     private static final String COL_CODE = "location_code";
     private static final String COL_NAME = "location_name";
@@ -63,253 +56,129 @@ public class USCLocationScraper {
     private static final String COL_LAT = "latitude";
     private static final String COL_LON = "longitude";
 
+    // path to json file
+    private static final String JSON_FILE_PATH = "uscmap_backend_structures/MAP/usc_buildings_with_coordinates.json";
+
 
     /**
-     * Grabs location data from the USC site.
-     *  MUST change the CSS selectors in here !!
+     * reads location data from json file.
      */
-    public static List<LocationData> scrapeLocations() {
+    public static List<LocationData> readLocationsFromJson(String jsonFilePath) {
         List<LocationData> locations = new ArrayList<>();
-        if (USC_DIRECTORY_URL == null || USC_DIRECTORY_URL.startsWith("YOUR_")) {
-             System.err.println("ERROR: USC Directory URL not set.");
-             return locations;
-        }
-        System.out.println("Scraping: " + USC_DIRECTORY_URL);
+        System.out.println("reading locations from: " + jsonFilePath);
 
         try {
-            Document doc = Jsoup.connect(USC_DIRECTORY_URL)
-                                .userAgent("Mozilla/5.0 Chrome/90") // Shorter user agent
-                                .timeout(10000) // 10 sec timeout
-                                .get();
+            String jsonContent = new String(Files.readAllBytes(Paths.get(jsonFilePath)), StandardCharsets.UTF_8);
+            Gson gson = new Gson();
+            Type listType = new TypeToken<ArrayList<LocationData>>(){}.getType();
+            locations = gson.fromJson(jsonContent, listType);
 
-            // !!! NEED CHANGE CSS SELECTORS TO MATCH THE SITE !!!
-            // Example: table rows (skip header)
-            Elements rows = doc.select("table#directoryTable tr:gt(0)"); // Adjust!
-
-            if (rows.isEmpty()) {
-                 System.out.println("WARN: No rows found with selector. Check URL/selector.");
-            }
-
-            for (Element row : rows) {
-                // Get cells from the row - adjust indices!
-                Elements cells = row.select("td");
-                if (cells.size() > 2) { // Need at least 3 cells
-                    String code = cells.get(0).text().trim();
-                    String name = cells.get(1).text().trim();
-                    String address = cells.get(2).text().trim();
-
-                    if (!code.isEmpty() && !address.isEmpty()) { // Name can sometimes be empty maybe?
-                        locations.add(new LocationData(code, name, address));
-                    } else {
-                         // System.out.println("Skipping row - empty code/address: " + row.text());
-                    }
-                } else {
-                     // System.out.println("Skipping row - not enough cells: " + row.text());
-                }
+            if (locations == null) {
+                locations = new ArrayList<>(); // ensure list not null
+                System.err.println("warn: json parsing resulted in null list.");
+            } else {
+                 // filter out entries with missing data
+                 locations.removeIf(loc -> loc.code == null || loc.code.trim().isEmpty() || loc.address == null || loc.address.trim().isEmpty());
+                 System.out.println("read " + locations.size() + " valid locations from json.");
             }
 
         } catch (IOException e) {
-            System.err.println("Scraping IO Error: " + e.getMessage());
-        } catch (Exception e) {
-             System.err.println("Scraping Error: " + e.getMessage());
-             e.printStackTrace(); // Show stack trace for unexpected errors
+            System.err.println("error reading json file '" + jsonFilePath + "': " + e.getMessage());
+        } catch (JsonSyntaxException e) {
+            System.err.println("error parsing json file '" + jsonFilePath + "': " + e.getMessage());
+        } catch (Exception e) { // catch any other errors
+            System.err.println("unexpected error reading/parsing json: " + e.getMessage());
         }
 
-        System.out.println("Scraped " + locations.size() + " locations.");
         return locations;
     }
 
-    /**
-     * Tries to get lat/lon for addresses using Google Geocoding.
-     * Needs GOOGLE_API_KEY to be set.
-     */
-    public static void geocodeLocations(List<LocationData> locations) {
-        if (GOOGLE_API_KEY == null || GOOGLE_API_KEY.startsWith("YOUR_")) {
-            System.err.println("ERROR: Google API Key missing. Geocoding skipped.");
-            return;
-        }
-        if (locations == null || locations.isEmpty()) return; // Nothing to do
-
-        System.out.println("Geocoding " + locations.size() + " locations...");
-        int successCount = 0, failCount = 0;
-        long startTime = System.currentTimeMillis();
-
-        for (LocationData loc : locations) {
-            HttpURLConnection conn = null; // Declare outside try for finally block
-            try {
-                String fullAddress = loc.address;
-                // Add city/state if it looks like it's missing
-                if (!fullAddress.matches(".*\b(CA|California)\b.*\d{5}.*")) {
-                     fullAddress += ", Los Angeles, CA";
-                }
-
-                String encodedAddress = URLEncoder.encode(fullAddress, StandardCharsets.UTF_8.toString());
-                URL url = new URL(GEOCODING_API_URL + "address=" + encodedAddress + "&key=" + GOOGLE_API_KEY);
-
-                conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestMethod("GET");
-                conn.setConnectTimeout(5000);
-                conn.setReadTimeout(5000);
-
-                int responseCode = conn.getResponseCode();
-                StringBuilder response = new StringBuilder();
-
-                // Read response (either OK or error stream)
-                try (BufferedReader reader = new BufferedReader(new InputStreamReader(
-                        responseCode == HttpURLConnection.HTTP_OK ? conn.getInputStream() : conn.getErrorStream()))) {
-                    String line;
-                    while ((line = reader.readLine()) != null) {
-                        response.append(line);
-                    }
-                }
-
-                if (responseCode == HttpURLConnection.HTTP_OK) {
-                    JSONObject jsonResponse = new JSONObject(response.toString());
-                    String status = jsonResponse.optString("status");
-
-                    if ("OK".equals(status)) {
-                        JSONArray results = jsonResponse.optJSONArray("results");
-                        if (results != null && results.length() > 0) {
-                            JSONObject location = results.optJSONObject(0)
-                                                         .optJSONObject("geometry")
-                                                         .optJSONObject("location");
-                            if (location != null) {
-                                loc.latitude = location.optDouble("lat"); // Defaults to 0.0 if missing
-                                loc.longitude = location.optDouble("lng");
-                                // Slightly different check than before
-                                if (Math.abs(loc.latitude) > 0.0001 || Math.abs(loc.longitude) > 0.0001) {
-                                     successCount++;
-                                } else {
-                                     System.out.println("WARN: Geocoded to (0,0) for: " + loc.address);
-                                     failCount++;
-                                }
-                            } else { failCount++; System.out.println("WARN: No location geometry for: " + loc.address); }
-                        } else { failCount++; System.out.println("WARN: No results array for: " + loc.address); }
-                    } else {
-                        failCount++;
-                        System.out.println("API Error: " + status + " for: " + loc.address + " - " + jsonResponse.optString("error_message"));
-                    }
-                } else {
-                    failCount++;
-                    System.out.println("HTTP Error: " + responseCode + " for: " + loc.address + " Response: " + response.substring(0, Math.min(response.length(), 100))); // Show partial error
-                }
-
-                Thread.sleep(55); // slightly different delay
-
-            } catch (IOException | JSONException | InterruptedException e) {
-                failCount++;
-                System.err.println("Geocoding Error for " + loc.address + ": " + e.getClass().getSimpleName() + " - " + e.getMessage());
-                if (e instanceof InterruptedException) Thread.currentThread().interrupt();
-            } catch (Exception e) { // Catch any other unexpected stuff
-                 failCount++;
-                 System.err.println("Unexpected Geocoding error for " + loc.address);
-                 e.printStackTrace();
-            } finally {
-                 if (conn != null) conn.disconnect(); // Make sure connection is closed
-            }
-        } // End loop
-
-         System.out.printf("Geocoding done (%d ms). Success: %d, Failed: %d%n",
-                           (System.currentTimeMillis() - startTime), successCount, failCount);
-    }
-
 
     /**
-     * Saves the locations to the database.
-     * Skips entries that already exist (by code or address).
+     * saves locations to db.
+     * might insert duplicates if run multiple times without db constraints.
+     * uses 'lat' and 'lng' from LocationData.
      */
     public static void storeLocationsInDB(List<LocationData> locations) {
-        if (locations == null || locations.isEmpty()) return;
+        if (locations == null || locations.isEmpty()) {
+            System.out.println("no locations to store in db.");
+            return;
+        }
 
-        String checkSql = String.format("SELECT 1 FROM %s WHERE %s = ? OR %s = ? LIMIT 1", DB_TABLE, COL_CODE, COL_ADDRESS);
+        // simplified insert statement
         String insertSql = String.format("INSERT INTO %s (%s, %s, %s, %s, %s) VALUES (?, ?, ?, ?, ?)",
                                          DB_TABLE, COL_CODE, COL_NAME, COL_ADDRESS, COL_LAT, COL_LON);
 
         int insertedCount = 0, skippedCount = 0, errorCount = 0;
-        System.out.println("Storing " + locations.size() + " locations in DB...");
+        System.out.println("storing " + locations.size() + " locations in db...");
 
-        // Use try-with-resources for DB connection and statements
-        try (Connection dbConnection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD); // Renamed variable
-             PreparedStatement checkStmt = dbConnection.prepareStatement(checkSql);
+        // use try-with-resources for connection
+        try (Connection dbConnection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
              PreparedStatement insertStmt = dbConnection.prepareStatement(insertSql)) {
 
-            dbConnection.setAutoCommit(false); // Use transaction
+            // no transaction/batching, insert one by one
 
             for (LocationData loc : locations) {
-                // Only save if geocoded (lat/lon not 0.0 - adjust if 0,0 is valid)
-                if (loc.latitude != 0.0 || loc.longitude != 0.0) {
-                    boolean exists = false;
-                    // Set parameters BEFORE executing the query
-                    checkStmt.setString(1, loc.code);
-                    checkStmt.setString(2, loc.address);
-                    try (ResultSet rs = checkStmt.executeQuery()) { // Check existence
-                         exists = rs.next(); // See if we get any result
-                    } catch (SQLException e) {
-                        System.err.println("DB Check Error for " + loc.code + ": " + e.getMessage());
-                        errorCount++;
-                        continue; // Skip this record on check error
-                    }
+                // check if essential data is present
+                if (loc.code == null || loc.code.trim().isEmpty() || loc.address == null || loc.address.trim().isEmpty()) {
+                    // System.out.println("skipping record due to missing code or address."); // less verbose
+                    skippedCount++;
+                    continue;
+                }
 
-                    if (exists) {
-                        skippedCount++;
-                    } else {
-                        // Add to batch
-                        try {
-                            insertStmt.setString(1, loc.code);
-                            insertStmt.setString(2, loc.name);
-                            insertStmt.setString(3, loc.address);
-                            insertStmt.setDouble(4, loc.latitude);
-                            insertStmt.setDouble(5, loc.longitude);
-                            insertStmt.addBatch();
-                        } catch (SQLException e) {
-                             System.err.println("DB Batch Add Error for " + loc.code + ": " + e.getMessage());
-                             errorCount++;
-                             // Don't add this one to the batch
+                // simple check for coordinates (not exactly 0,0)
+                if (Math.abs(loc.lat) > 0.0001 || Math.abs(loc.lng) > 0.0001) {
+                    try {
+                        insertStmt.setString(1, loc.code);
+                        insertStmt.setString(2, loc.name != null ? loc.name : ""); // handle null names
+                        insertStmt.setString(3, loc.address);
+                        insertStmt.setDouble(4, loc.lat);   // use loc.lat
+                        insertStmt.setDouble(5, loc.lng);   // use loc.lng
+                        int result = insertStmt.executeUpdate(); // execute insert directly
+                        if (result > 0) {
+                            insertedCount++;
+                        } else {
+                            // this case might not happen often with simple inserts unless 0 rows affected is possible
+                            errorCount++;
                         }
+                    } catch (SQLException e) {
+                         System.err.println("db insert error for " + loc.code + ": " + e.getMessage());
+                         errorCount++;
                     }
                 } else {
-                    skippedCount++; // Skip non-geocoded
+                    // System.out.println("skipping record with (0,0) coordinates: " + loc.code); // less verbose
+                    skippedCount++; // skip non-geocoded or (0,0) coordinates
                 }
-            } // End loop
-
-            // Execute batch
-            System.out.println("Executing DB batch...");
-            int[] batchResults = insertStmt.executeBatch();
-            dbConnection.commit(); // Commit transaction
-
-            for (int result : batchResults) {
-                if (result >= 0 || result == PreparedStatement.SUCCESS_NO_INFO) insertedCount++;
-                else errorCount++; // Count failed batch items as errors
-            }
-            System.out.println("Batch finished.");
+            } // end loop
 
         } catch (SQLException e) {
-            System.err.println("Database Connection/Transaction Error: " + e.getMessage());
-            errorCount += locations.size() - skippedCount - insertedCount; // Estimate remaining as errors
-            e.printStackTrace();
-            // Rollback is implicit with try-with-resources closing on exception if autoCommit is false
+            System.err.println("database connection error: " + e.getMessage());
+            // error count might be off if connection fails mid-way
+            // e.printStackTrace();
         }
 
-        System.out.printf("DB storage done. Inserted: %d, Skipped: %d, Errors: %d%n",
+        System.out.printf("db storage done. inserted: %d, skipped: %d, errors: %d%n",
                           insertedCount, skippedCount, errorCount);
     }
 
 
     /**
-     * Main entry point.
+     * main entry point. uses json reading.
      */
     public static void main(String[] args) {
-        System.out.println("--- USC Location Scraper --- START ---");
-        long globalStart = System.currentTimeMillis();
+        System.out.println("--- usc location json loader --- start ---");
+        long start = System.currentTimeMillis(); // simpler var name
 
-        List<LocationData> scrapedLocations = scrapeLocations();
-        if (!scrapedLocations.isEmpty()) {
-            geocodeLocations(scrapedLocations);
-            storeLocationsInDB(scrapedLocations);
+        // load locations from json
+        List<LocationData> locations = readLocationsFromJson(JSON_FILE_PATH); // simpler var name
+
+        if (locations != null && !locations.isEmpty()) {
+            // store locations in db
+            storeLocationsInDB(locations);
         } else {
-             System.out.println("Nothing scraped, skipping geocoding and DB storage.");
+             System.out.println("no locations loaded from json, skipping db storage.");
         }
 
-        System.out.printf("--- USC Location Scraper --- DONE (%d ms) ---%n", (System.currentTimeMillis() - globalStart));
+        System.out.printf("--- usc location json loader --- done (%d ms) ---%n", (System.currentTimeMillis() - start));
     }
 }
