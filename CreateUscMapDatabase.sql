@@ -25,7 +25,9 @@ CREATE TABLE userInfo(
     password varchar(256),
     firstName varchar(256),
     lastName varchar(256),
-    phoneNumber varchar(20)
+    phoneNumber varchar(20),
+    latitude decimal(9,6),
+    longitude decimal(9,6)
 );
 
 CREATE TABLE locations(
@@ -33,7 +35,7 @@ CREATE TABLE locations(
     name varchar(256),
     category varchar(256),
     address varchar(256),
-    lattitude decimal(9,6),
+    latitude decimal(9,6),
     longitude decimal(9,6)
 );
 

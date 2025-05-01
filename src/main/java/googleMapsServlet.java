@@ -33,7 +33,7 @@ public class googleMapsServlet extends HttpServlet {
                         rs.getString("name"),
                         rs.getString("category"),
                         rs.getString("address"),
-                        rs.getDouble("lattitude"),
+                        rs.getDouble("latitude"),
                         rs.getDouble("longitude")
                     );
                     locations.add(location);

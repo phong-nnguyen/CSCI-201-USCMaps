@@ -27,9 +27,9 @@ public class loginPageBackend extends HttpServlet {
             // collect extra fields
             String firstName    = request.getParameter("firstName");
             String lastName     = request.getParameter("lastName");
-            String emailAdress  = request.getParameter("emailAdress");
+            String email  = request.getParameter("emailAdress");
             String phoneNumber  = request.getParameter("phoneNumber");
-            msg = addUserToDataBase(user, pass, firstName, lastName, emailAdress, phoneNumber);
+            msg = addUserToDataBase(user, pass, firstName, lastName, email, phoneNumber);
         }
         else if ("Forgot Password".equals(logValue)) {
         }
@@ -74,7 +74,7 @@ public class loginPageBackend extends HttpServlet {
         String pass, 
         String firstName, 
         String lastName, 
-        String emailAdress, 
+        String email, 
         String phoneNumber) {
         
         Connection con = null;
@@ -103,7 +103,7 @@ public class loginPageBackend extends HttpServlet {
             ps.setString(2, pass);
             ps.setString(3, firstName);
             ps.setString(4, lastName);
-            ps.setString(5, emailAdress);
+            ps.setString(5, email);
             ps.setString(6, phoneNumber);
             
             int result = ps.executeUpdate();
