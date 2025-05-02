@@ -1,19 +1,8 @@
--- Disable foreign key checks
-SET FOREIGN_KEY_CHECKS = 0;
+DROP DATABASE IF EXISTS trojanMapsDB;
 
 -- Main database
-CREATE DATABASE IF NOT EXISTS trojanMapsDB;
+CREATE DATABASE trojanMapsDB;
 USE trojanMapsDB;
-
--- Drop tables in any order
-DROP TABLE IF EXISTS userPins;
-DROP TABLE IF EXISTS userInfo;
-DROP TABLE IF EXISTS locations;
-DROP TABLE IF EXISTS googleMapKey;
-DROP TABLE IF EXISTS userFriendGroup;
-
--- Enable foreign key checks again
-SET FOREIGN_KEY_CHECKS = 1;
 
 -- Now recreate your tables
 CREATE TABLE userInfo(
@@ -23,7 +12,9 @@ CREATE TABLE userInfo(
     password varchar(256),
     firstName varchar(256),
     lastName varchar(256),
-    phoneNumber varchar(20)
+    phoneNumber varchar(20),
+    latitude decimal(9,6),
+    longitude decimal(9,6)
 );
 
 CREATE TABLE locations(
@@ -31,7 +22,7 @@ CREATE TABLE locations(
     name varchar(256),
     category varchar(256),
     address varchar(256),
-    lattitude decimal(9,6),
+    latitude decimal(9,6),
     longitude decimal(9,6)
 );
 
@@ -48,12 +39,17 @@ CREATE TABLE googleMapKey(
     keyVal varchar(512)
 );
 
+CREATE TABLE friendGroups (
+    groupID INT AUTO_INCREMENT PRIMARY KEY,
+    groupName VARCHAR(256)
+);
+
 CREATE TABLE userFriendGroup(
-    userID int,
-    groupID int,
+    groupID INT,
+    userID INT,
     userVisible BOOLEAN DEFAULT TRUE,
-    PRIMARY KEY (userID, groupID),
-    FOREIGN KEY (userID) REFERENCES userInfo(userID) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (groupID) REFERENCES friendGroups(groupID) ON DELETE CASCADE,
+    FOREIGN KEY (userID) REFERENCES userInfo(userID) ON DELETE CASCADE
 );
 
 -- Don't forget to quote the string
