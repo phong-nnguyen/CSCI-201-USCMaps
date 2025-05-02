@@ -40,8 +40,13 @@ public class getLocationServlet extends HttpServlet {
         BufferedReader reader = req.getReader();
         JsonObject json = gson.fromJson(reader, JsonObject.class);
 
-        String address = json.has("address") ? json.get("address").getAsString() : null;
-
+        String adress;
+        if(json.has("adress")){
+            adress = json.get("address").getAsString();
+        }else{
+            adress = null;
+        }
+        
         if (address == null || address.trim().isEmpty()) {
             resp.setStatus(400);
             JsonObject err = new JsonObject();
