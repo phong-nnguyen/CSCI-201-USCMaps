@@ -11,10 +11,9 @@
   <body>
     <div id = "bar">
       <button id = "add-friends">Add Friend Group</button>
-      <!-- add friend groups dynamically -->
       <div id ="friends-bar">
-        <button class ="group">USC Study Buddies</button>
-      </div>
+      
+      </div>g
     </div>
 
     <div id = "friend-overlay">
@@ -22,16 +21,16 @@
         <div id = "popup-header">
           <h2>Create Friend Group</h2>
           <div id ="close">
-            <img id ="close-button" src="x.png" alt="close popup">
+            <img id ="close-button" src="images/x.png" alt="close popup">
           </div>
         </div>
 
         <form id ="add-group">
-          <div class = "input-group">
+          <!-- <div class = "input-group">
               <p class ="input-label">Group Name:</p>
               <input id = "name-input" class ="input" type="text" name="groupName" placeholder="Enter Goup Name" required>
               <p id ="name-error" class = "error-message">Group Name cannot be empty.</p>
-          </div>
+          </div> -->
 
           <div class = "input-group">
             <p class ="input-label">Email One: </p>
@@ -78,26 +77,26 @@
       }
     })
 
-    const nameInput = document.getElementById("name-input");
+    // const nameInput = document.getElementById("name-input");
     const emOneInput = document.getElementById("email-input-one");
     const emTwoInput = document.getElementById("email-input-two");
     const emThreeInput = document.getElementById("email-input-three");
     let nameValid = false, emOneValid = false, emTwoValid = false, emThreeValid = false;
 
-    const nameError = document.getElementById("name-error");
+    // const nameError = document.getElementById("name-error");
     const emOneError = document.getElementById("email-error-one");
     const emTwoError = document.getElementById("email-error-two");
     const emThreeError = document.getElementById("email-error-three");
 
-    nameInput.addEventListener("input", ()=>{
-      nameError.style.display = "none";
-      nameValid = true;
-      if(!nameInput.validity.valid){
-        nameError.style.display = "block";
-        nameValid = false;
-      }
-      checkSubmit();
-    })
+    // nameInput.addEventListener("input", ()=>{
+    //   nameError.style.display = "none";
+    //   nameValid = true;
+    //   if(!nameInput.validity.valid){
+    //     nameError.style.display = "block";
+    //     nameValid = false;
+    //   }
+    //   checkSubmit();
+    // })
 
     emOneInput.addEventListener("input", ()=>{
       emOneError.style.display = "none";
@@ -139,7 +138,7 @@
     })
 
     function checkSubmit(){
-      if(emThreeValid && emTwoValid && emOneValid && nameValid){
+      if(emThreeValid && emTwoValid && emOneValid){
       document.getElementById("submit-button").disabled = false;
       }
       else{
@@ -150,7 +149,7 @@
     function submit(e){
       e.preventDefault();
       var jsonData = {
-        "groupName" : nameInput.value.trim(),
+        //"groupName" : nameInput.value.trim(),
         "emailOne" : emOneInput.value.trim(),
         "emailTwo" : emTwoInput.value.trim(),
         "emailThree" : emThreeInput.value.trim()
@@ -170,7 +169,7 @@
           const bar = document.getElementById("friends-bar");
           const newGroup = document.createElement("button");
           newGroup.className = "group";
-          newGroup.textContent = nameInput.value.trim();
+          newGroup.textContent = "My Friends";
           bar.appendChild(newGroup);
         }
         else{
@@ -180,7 +179,7 @@
       })
     }
 
-    document.getElementById("submit-button").addEventListener("submit", submit);
+    document.getElementById("add-group").addEventListener("submit", submit);
 
 
 </script>
