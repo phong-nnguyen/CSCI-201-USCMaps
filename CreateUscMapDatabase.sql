@@ -4,7 +4,6 @@ DROP DATABASE IF EXISTS trojanMapsDB;
 CREATE DATABASE trojanMapsDB;
 USE trojanMapsDB;
 
--- Now recreate your tables
 CREATE TABLE userInfo(
     userID int auto_increment primary key,
     username varchar(256),
@@ -52,6 +51,5 @@ CREATE TABLE userFriendGroup(
     FOREIGN KEY (userID) REFERENCES userInfo(userID) ON DELETE CASCADE
 );
 
--- Don't forget to quote the string
 INSERT INTO googleMapKey (keyVal) 
 VALUES ('AIzaSyDGIPlUnED-AeiAjI7oZaQm6WDPzpSpMPg');
