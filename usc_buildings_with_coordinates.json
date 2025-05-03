@@ -1,0 +1,2486 @@
+[
+  {
+    "code": "ABA",
+    "name": "Anna Bing Arnold Child Care Ctr.",
+    "address": "2715 University Ave.",
+    "lat": 34.0283816,
+    "lng": -118.2808462,
+    "formatted_address": "2715 University Ave, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJFduBo-jHwoARQos74pqYbKQ"
+  },
+  {
+    "code": "ABX",
+    "name": "Anna Bing Arnold Child Care Ctr. Annex",
+    "address": "2716 Severance St., 90007",
+    "lat": 34.0286939,
+    "lng": -118.2815999,
+    "formatted_address": "2716 Severance St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJW3b6s-jHwoARfox1HueqQ4c"
+  },
+  {
+    "code": "ACB",
+    "name": "Ahmanson Ctr. for Biological Research",
+    "address": "825 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ACC",
+    "name": "Accounting, Leventhal School of",
+    "address": "3660 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ACX",
+    "name": "Ahmanson Ctr. for Biological Research Animal Section",
+    "address": "825 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ADM",
+    "name": "Bovard Administration Bldg. and Kenneth Norris, Jr. Aud.",
+    "address": "3551 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "AEP",
+    "name": "Alpha Epsilon Pi fraternity",
+    "address": "904 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "AGO",
+    "name": "Alpha Gamma Omega fraternity",
+    "address": "2831 University Ave.",
+    "lat": 34.0269993,
+    "lng": -118.2817768,
+    "formatted_address": "2831 University Ave, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJLQtpCObHwoARI9iwtx-opSM"
+  },
+  {
+    "code": "AHF",
+    "name": "Allan Hancock Foundation Bldg.",
+    "address": "3616 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "AHN",
+    "name": "Dosan Ahn Chang Ho Family House",
+    "address": "809 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ALM",
+    "name": "Alumni House, Widney",
+    "address": "635 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ANH",
+    "name": "Annenberg House",
+    "address": "711 W. 27th St.",
+    "lat": 34.0287908,
+    "lng": -118.2792028,
+    "formatted_address": "Annenberg House, 711 W 27th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJf7zFhujHwoAR6J9rCbcs0TQ"
+  },
+  {
+    "code": "ANN",
+    "name": "Wallis Annenberg Hall",
+    "address": "3630 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ASC",
+    "name": "Annenberg School for Communication",
+    "address": "3502 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ATB",
+    "name": "AT&T Building Tower",
+    "address": "1150 S. Olive St.",
+    "lat": 34.0395873,
+    "lng": -118.2618061,
+    "formatted_address": "1150 S Olive St, Los Angeles, CA 90015, USA",
+    "place_id": "ChIJK-6N48jHwoAR6L0o6mcOdoY"
+  },
+  {
+    "code": "ATT",
+    "name": "AT&T Center",
+    "address": "1149 S. Hill St.",
+    "lat": 34.0391822,
+    "lng": -118.2612961,
+    "formatted_address": "1149 S Hill St, Los Angeles, CA 90015, USA",
+    "place_id": "ChIJDyl3H8nHwoARkzRSGlk983M"
+  },
+  {
+    "code": "BAA",
+    "name": "Bel-Aire Apts.",
+    "address": "1124 W. 29th St.",
+    "lat": 34.0282235,
+    "lng": -118.2845303,
+    "formatted_address": "1124 W 29th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ0Sa-dO_HwoARhbJydZgK3EY"
+  },
+  {
+    "code": "BAB",
+    "name": "Barracks A & B",
+    "address": "1200 N. State St.",
+    "lat": 34.0580024,
+    "lng": -118.2088248,
+    "formatted_address": "1200 N State St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJjQqnP3TGwoARhu_YXsVES5E"
+  },
+  {
+    "code": "BAR",
+    "name": "Barlow Hospital",
+    "address": "2000 Stadium Way",
+    "lat": 34.0761338,
+    "lng": -118.2481282,
+    "formatted_address": "2000 Stadium Way, Los Angeles, CA 90026, USA",
+    "place_id": "ChIJwSPSuPzGwoARvZziF4qXT0k"
+  },
+  {
+    "code": "BCC",
+    "name": "Eli and Edythe Broad CIRM Center for Regenerative Medicine and Stem Cell Research",
+    "address": "1425 San Pablo St.",
+    "lat": 34.0619767,
+    "lng": -118.2036247,
+    "formatted_address": "1425 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJl6xRJd_FwoARawhe1X0qvBc"
+  },
+  {
+    "code": "BCH",
+    "name": "Boone Center Housing",
+    "address": "10317-10343 W. Big Fishermans Cove, Catalina Island",
+    "lat": 33.4443118,
+    "lng": -118.4825318,
+    "formatted_address": "Big Fisherman Cv, California 90704, USA",
+    "place_id": "ChIJZaiJCndo3YAR5Va2KhGljIw"
+  },
+  {
+    "code": "BDB",
+    "name": "Bernardo Drive Bldg.",
+    "address": "16870 W. Bernardo Dr., 200, San Diego",
+    "lat": 33.0196803,
+    "lng": -117.0813404,
+    "formatted_address": "16870 W Bernardo Dr #200, San Diego, CA 92127, USA",
+    "place_id": "ChIJdYTqkCz324ARsAhrXXLTy1I"
+  },
+  {
+    "code": "BDF",
+    "name": "Brooks Memorial Pavilion and Dedeaux Field",
+    "address": "1021 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BHE",
+    "name": "Biegler Hall of Engineering",
+    "address": "920 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BIT",
+    "name": "Bing Theatre",
+    "address": "3500 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BKF",
+    "name": "Brian Kennedy Field",
+    "address": "3515 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BKS",
+    "name": "Pertusati University Bookstore",
+    "address": "840 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BMH",
+    "name": "Booth Ferris Rehearsal Hall",
+    "address": "820 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BMP",
+    "name": "Burbank Medical Plaza #2",
+    "address": "191 S. Buena Vista St., #310, Burbank",
+    "lat": 34.158489,
+    "lng": -118.3291329,
+    "formatted_address": "191 S Buena Vista St #310, Burbank, CA 91505, USA",
+    "place_id": "EjExOTEgUyBCdWVuYSBWaXN0YSBTdCAjMzEwLCBCdXJiYW5rLCBDQSA5MTUwNSwgVVNBIh8aHQoWChQKEgn3E9ulxL_CgBECWcrdwwRflRIDMzEw"
+  },
+  {
+    "code": "BMT",
+    "name": "Bishop Medical Teaching and Research Bldg.",
+    "address": "1333 San Pablo St.",
+    "lat": 34.0604562,
+    "lng": -118.204508,
+    "formatted_address": "1333 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJBxtobd_FwoARMIrTCc6BF3A"
+  },
+  {
+    "code": "BRI",
+    "name": "Bridge Memorial Hall",
+    "address": "3670 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BSR",
+    "name": "Birnkrant Residential College",
+    "address": "642 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "BTL",
+    "name": "Behavior Technology Labs",
+    "address": "250 N. Harbor Dr., Redondo Beach",
+    "lat": 33.8447255,
+    "lng": -118.3922802,
+    "formatted_address": "250 N Harbor Dr, Redondo Beach, CA 90277, USA",
+    "place_id": "ChIJa1UZcqC0woARfv5JiLMOh4U"
+  },
+  {
+    "code": "BTP",
+    "name": "Beta Theta Pi fraternity",
+    "address": "2714 Portland Dr.",
+    "lat": 34.0292921,
+    "lng": -118.2827174,
+    "formatted_address": "Oasis on the Row, Beta Theta Pi Fraternity, 2714 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJF3qBOu_HwoARXtldvokNAoU"
+  },
+  {
+    "code": "CAB",
+    "name": "CMSC Administration Bldg.",
+    "address": "P.O. Box 398, Catalina Island, 90704",
+    "lat": 33.3878856,
+    "lng": -118.4163103,
+    "formatted_address": "Santa Catalina Island, California 90704, USA",
+    "place_id": "ChIJJYvheyNv3YARqw71xdWjWT4"
+  },
+  {
+    "code": "CAL",
+    "name": "Carole Little Bldg.",
+    "address": "3434 Grand Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CAP",
+    "name": "Century Apts.",
+    "address": "3115 S. Orchard St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CAR",
+    "name": "Cardinal Gardens",
+    "address": "3131 S. McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CAS",
+    "name": "College Academic Services Bldg.",
+    "address": "3454 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CBB",
+    "name": "Century Boulevard Building",
+    "address": "6033 Century Blvd. #920, Los Angeles",
+    "lat": 33.9457721,
+    "lng": -118.38943,
+    "formatted_address": "6033 Century Blvd #920, Los Angeles, CA 90045, USA",
+    "place_id": "EjI2MDMzIENlbnR1cnkgQmx2ZCAjOTIwLCBMb3MgQW5nZWxlcywgQ0EgOTAwNDUsIFVTQSI6GjgKMRIvChQKEgndZDNn1LbCgBGjxvCrJurQ5hCRLyoUChIJPRuWUyqxwoAR70knOxZu830SAzkyMA"
+  },
+  {
+    "code": "CBG",
+    "name": "University Gardens Apts.",
+    "address": "1250 W. Jefferson Blvd.",
+    "lat": 34.0248575,
+    "lng": -118.2927213,
+    "formatted_address": "1250 W Jefferson Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJf4dbCfrHwoARwuKH4e1um7o"
+  },
+  {
+    "code": "CCC",
+    "name": "Health Sciences Child Care Ctr.",
+    "address": "2250 Alcazar St.",
+    "lat": 34.062596,
+    "lng": -118.2000106,
+    "formatted_address": "Institute for Genetic Medicine, 2250 Alcazar St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJu_jTG9zFwoARoCSe3Af2ZCA"
+  },
+  {
+    "code": "CDF",
+    "name": "Campus Development & Facilities Bldg.",
+    "address": "3434 Grand Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CEM",
+    "name": "Ctr. for Electron Microscopy and Microanalysis",
+    "address": "814 W. Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CEN",
+    "name": "Centennial Apts.",
+    "address": "2390 Portland Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CFH",
+    "name": "Cromwell Athletic Field House",
+    "address": "3525 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CGC",
+    "name": "Citi Group Center-Marshall School",
+    "address": "444 S. Flower St.",
+    "lat": 34.0521432,
+    "lng": -118.2553339,
+    "formatted_address": "444 Flower St, Los Angeles, CA 90071, USA",
+    "place_id": "ChIJq9Myf3LHwoAR_xMPDBuvlc4"
+  },
+  {
+    "code": "CHA",
+    "name": "Commons House Apts.",
+    "address": "725-731 W. 32nd St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CHP",
+    "name": "Ctr. for Health Professions",
+    "address": "1540 Alcazar St.",
+    "lat": 34.0630034,
+    "lng": -118.2039119,
+    "formatted_address": "1540 Alcazar St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ__8Pz9jFwoARQTYLQiVV3jQ"
+  },
+  {
+    "code": "CLH",
+    "name": "College House",
+    "address": "823 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CNG",
+    "name": "Cardinal 'N Gold",
+    "address": "737 W. 30th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "COL",
+    "name": "College Residence Hall",
+    "address": "615 W. 35th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CSA",
+    "name": "Clinical Sciences Annex",
+    "address": "2250 Alcazar St.",
+    "lat": 34.062596,
+    "lng": -118.2000106,
+    "formatted_address": "Institute for Genetic Medicine, 2250 Alcazar St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJu_jTG9zFwoARoCSe3Af2ZCA"
+  },
+  {
+    "code": "CSB",
+    "name": "Central Services Bldg.",
+    "address": "1501 N. Soto St.",
+    "lat": 34.0607736,
+    "lng": -118.1993271,
+    "formatted_address": "Central Sevices Building, 1501 N Soto St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJBzEI0t3FwoAR-pvRwiXc53I"
+  },
+  {
+    "code": "CSC",
+    "name": "Clinical Science Ctr.",
+    "address": "2250 Alcazar St.",
+    "lat": 34.062596,
+    "lng": -118.2000106,
+    "formatted_address": "Institute for Genetic Medicine, 2250 Alcazar St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJu_jTG9zFwoARoCSe3Af2ZCA"
+  },
+  {
+    "code": "CSS",
+    "name": "Harold Lloyd Motion Picture Scoring Stage",
+    "address": "3450 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CST",
+    "name": "CAD Services Trailer",
+    "address": "941 W. 35th St.",
+    "lat": 34.0229087,
+    "lng": -118.2870579,
+    "formatted_address": "941 W 35th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJAQBQz-THwoARCyu_VZFUp9o"
+  },
+  {
+    "code": "CTC",
+    "name": "Cinema-Television Ctr. Complex",
+    "address": "3450 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CTV",
+    "name": "Carson Television Ctr.",
+    "address": "3450 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CUB",
+    "name": "Credit Union Building",
+    "address": "3720 S. Flower St.",
+    "lat": 34.0173811,
+    "lng": -118.2810469,
+    "formatted_address": "3720 Flower St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ-XOZCArIwoARUD8vQU3iovs"
+  },
+  {
+    "code": "CWO",
+    "name": "Childs Way Bldg. I",
+    "address": "1012 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "CWT",
+    "name": "Childs Way Bldg. II",
+    "address": "1014 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DAC",
+    "name": "Doheny Arcadia Clinic",
+    "address": "622 W. Duarte Rd., Ste. 102, Arcadia",
+    "lat": 34.12488829999999,
+    "lng": -118.0518179,
+    "formatted_address": "622 W Duarte Rd #102, Arcadia, CA 91007, USA",
+    "place_id": "ChIJrRoRAOjbwoARmw5ZGsMkoao"
+  },
+  {
+    "code": "DCC",
+    "name": "Davidson Continuing Education Conference Ctr.",
+    "address": "3415 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DCF",
+    "name": "Delta Chi fraternity",
+    "address": "920 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DEN",
+    "name": "Norris Dental Science Ctr.",
+    "address": "925 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DML",
+    "name": "Doheny Memorial Library",
+    "address": "3550 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DMT",
+    "name": "Marks Tower",
+    "address": "612 W. Hellman Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DNI",
+    "name": "Dornsife Neuroscience Imaging Center",
+    "address": "3520-A McClintock Ave.",
+    "lat": 34.02297,
+    "lng": -118.28825,
+    "formatted_address": "3520 McClintock Ave a, Los Angeles, CA 90089, USA",
+    "place_id": "EjEzNTIwIE1jQ2xpbnRvY2sgQXZlIGEsIExvcyBBbmdlbGVzLCBDQSA5MDA4OSwgVVNBIh0aGwoWChQKEgm_5jcu-8fCgBFliMmX2hSnKxIBYQ"
+  },
+  {
+    "code": "DOH",
+    "name": "Estelle Doheny Eye Foundation",
+    "address": "1355 San Pablo St.",
+    "lat": 34.0609777,
+    "lng": -118.2041228,
+    "formatted_address": "Doheny Vision Research Center, 1355 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJvSXJFd_FwoARx7ReRKePxZI"
+  },
+  {
+    "code": "DRB",
+    "name": "Denney Research Ctr.",
+    "address": "1042 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DRC",
+    "name": "Drama Ctr.",
+    "address": "1029-33 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DTD",
+    "name": "Delta Tau Delta fraternity",
+    "address": "801 West 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "DXM",
+    "name": "Marks Residence Hall, David X.",
+    "address": "631 W. Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ECT",
+    "name": "Early Childhood Training Ctr.",
+    "address": "741 W. 27th St.",
+    "lat": 34.0288247,
+    "lng": -118.279856,
+    "formatted_address": "741 W 27th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJVbyCmujHwoARoyuaXdeTQts"
+  },
+  {
+    "code": "EDM",
+    "name": "Edmondson Research Bldg.",
+    "address": "1840 N. Soto St.",
+    "lat": 34.065278,
+    "lng": -118.1958939,
+    "formatted_address": "1840 N Soto St, Los Angeles, CA 90032, USA",
+    "place_id": "ChIJ1aUcadvFwoARwA4E_3wCdDg"
+  },
+  {
+    "code": "EEB",
+    "name": "Hughes Aircraft Electrical Engineering Bldg.",
+    "address": "3740 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "EGG",
+    "name": "Egg Company II",
+    "address": "746 W. Adams Blvd.",
+    "lat": 34.029146,
+    "lng": -118.2798544,
+    "formatted_address": "746 W Adams Blvd, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJw0pz7ujHwoARs4IIHC8M-98"
+  },
+  {
+    "code": "EHP",
+    "name": "Estrella Housing Partners",
+    "address": "1953 Estrella Ave.",
+    "lat": 34.0341003,
+    "lng": -118.2754847,
+    "formatted_address": "1953 Estrella Ave, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJVRL-PVXHwoAR9mRKQOtQpSI"
+  },
+  {
+    "code": "ELB",
+    "name": "East Library Bldg.",
+    "address": "3440 S. Hope St.",
+    "lat": 34.0192687,
+    "lng": -118.2781622,
+    "formatted_address": "East Library Bldg, 3440 S Hope St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJk-F8OeDHwoARAaKogqX61OQ"
+  },
+  {
+    "code": "EPS",
+    "name": "Exposition Blvd. Parking Structure",
+    "address": "3533 S. Flower St.",
+    "lat": 34.0191022,
+    "lng": -118.2806345,
+    "formatted_address": "Exposition Parking Structure, 3533 Flower St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ-87RlOHHwoARGnsSg89i-xc"
+  },
+  {
+    "code": "ESH",
+    "name": "Engemann Student Health Center",
+    "address": "1031 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "EVK",
+    "name": "EVK Residence Hall",
+    "address": "635 W. McCarthy Way",
+    "lat": 34.0210034,
+    "lng": -118.2819102,
+    "formatted_address": "635 USC McCarthy Way, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJTduge-HHwoARC214Ttc4KM8"
+  },
+  {
+    "code": "FIG",
+    "name": "Figueroa Bldg.",
+    "address": "3535 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "FLT",
+    "name": "Fluor Tower",
+    "address": "1027 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "FMH",
+    "name": "Forthmann House",
+    "address": "2801 South Hoover St.",
+    "lat": 34.0291822,
+    "lng": -118.2842947,
+    "formatted_address": "2801 S Hoover St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJn2f9BO_HwoARi4Fk1yNL0nc"
+  },
+  {
+    "code": "FML",
+    "name": "Feuchtwanger Memorial Library",
+    "address": "520 Paseo Miramar, Pacific Palisades",
+    "lat": 34.0462149,
+    "lng": -118.5560031,
+    "formatted_address": "520 Paseo Miramar, Pacific Palisades, CA 90272, USA",
+    "place_id": "ChIJk1rLrpSjwoAR5DzZL0pLMho"
+  },
+  {
+    "code": "FMT",
+    "name": "Fairmont Apts.",
+    "address": "2629 Portland St.",
+    "lat": 34.0301982,
+    "lng": -118.2830801,
+    "formatted_address": "2629 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJIfDM3u7HwoAR0duWo6RsDko"
+  },
+  {
+    "code": "FPM",
+    "name": "Facilities Management & Planning Trailer",
+    "address": "3450 S. Vermont Ave.",
+    "lat": 34.0244586,
+    "lng": -118.291041,
+    "formatted_address": "3450 S Vermont Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJJagAZPrHwoARaEgJiJPvQIU"
+  },
+  {
+    "code": "FRE",
+    "name": "Freeman House",
+    "address": "1962 Glencoe Way",
+    "lat": 34.1056001,
+    "lng": -118.3386375,
+    "formatted_address": "1962 Glencoe Way, Los Angeles, CA 90068, USA",
+    "place_id": "ChIJvVr9dSK_woARwfnXxkLUJMU"
+  },
+  {
+    "code": "FSA",
+    "name": "Founders Apts.",
+    "address": "2610 Portland St.",
+    "lat": 34.0304297,
+    "lng": -118.281947,
+    "formatted_address": "Founders Apartments, 2610 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJcUuo1e7HwoARpLF9YLhEBWM"
+  },
+  {
+    "code": "GAH",
+    "name": "Gamble House",
+    "address": "4 Westmoreland Pl., Pasadena",
+    "lat": 34.151617,
+    "lng": -118.1609043,
+    "formatted_address": "4 Westmoreland Pl, Pasadena, CA 91103, USA",
+    "place_id": "ChIJYckARKDDwoARziCRIidPBt4"
+  },
+  {
+    "code": "GAP",
+    "name": "Galen Athletic Pavilion",
+    "address": "3400 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "GEC",
+    "name": "Galen Event Center",
+    "address": "3400 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "GEH",
+    "name": "Max Kade Ctr. I",
+    "address": "2712 S. Hoover St.",
+    "lat": 34.0299065,
+    "lng": -118.2837942,
+    "formatted_address": "2712 S Hoover St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJs3Yl4u7HwoARyyaipKNE92k"
+  },
+  {
+    "code": "GER",
+    "name": "Gerontology Ctr., Andrus",
+    "address": "3715 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "GEX",
+    "name": "Max Kade House",
+    "address": "2718 S. Hoover St.",
+    "lat": 34.0296585,
+    "lng": -118.2837346,
+    "formatted_address": "2718 S Hoover St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJh9diHu_HwoARVbnKEhyv8bs"
+  },
+  {
+    "code": "GFS",
+    "name": "Grace Ford Salvatori Hall of Letters, Arts and Sciences",
+    "address": "3601 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "GLB",
+    "name": "General Labs Bldg.",
+    "address": "1129 N. State St.",
+    "lat": 34.0580522,
+    "lng": -118.2101789,
+    "formatted_address": "1129 N State St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJJT5i83TGwoARfD06ueRHNzo"
+  },
+  {
+    "code": "GNH",
+    "name": "General County Hospital",
+    "address": "1937 Hospital Pl.",
+    "lat": 34.0583436,
+    "lng": -118.2094812,
+    "formatted_address": "1937 Hospital Pl, Los Angeles, CA 90033, USA",
+    "place_id": "EiwxOTM3IEhvc3BpdGFsIFBsLCBMb3MgQW5nZWxlcywgQ0EgOTAwMzMsIFVTQSIxEi8KFAoSCbk4ePd0xsKAEcwSq4mn1DE6EJEPKhQKEgm5OHj3dMbCgBG9NP2oTrOyAA"
+  },
+  {
+    "code": "GPC",
+    "name": "Golf Practice Course",
+    "address": "1021 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HAP",
+    "name": "Helena Apts.",
+    "address": "1220 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HAR",
+    "name": "Harris Hall, University Art Galleries (Quinn Wing, Klinger Gallery and Fisher Gallery)",
+    "address": "823-29 Exposition Blvd.",
+    "lat": 34.0188374,
+    "lng": -118.2873054,
+    "formatted_address": "823 Exposition Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJpTtyKePHwoARW6SPf4jGXKQ"
+  },
+  {
+    "code": "HCB",
+    "name": "CMSC Hyperbaric Chamber Building",
+    "address": "P.O. Box 398, Catalina Island, Avalon",
+    "lat": 33.3428193,
+    "lng": -118.3282279,
+    "formatted_address": "Avalon, CA 90704, USA",
+    "place_id": "ChIJK5XS4Zhy3YARtGJqTXDeypk"
+  },
+  {
+    "code": "HC1",
+    "name": "Health Care Consultation Ctr.",
+    "address": "1510 San Pablo St.",
+    "lat": 34.0623826,
+    "lng": -118.2019939,
+    "formatted_address": "Health Care Consultation Center, 1510 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJabduz97FwoARhLFyxG8-kuc"
+  },
+  {
+    "code": "HC2",
+    "name": "Health Consultation Ctr. II",
+    "address": "1520 San Pablo St.",
+    "lat": 34.06262390000001,
+    "lng": -118.202541,
+    "formatted_address": "1520 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJ-Zis1t7FwoARB_FHo0ypIPE"
+  },
+  {
+    "code": "HC4",
+    "name": "Estelle Doheny Eye Institute",
+    "address": "1537 Norfolk St.",
+    "lat": 34.0615228,
+    "lng": -118.2024602,
+    "formatted_address": "1537 Norfolk St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJZTV03d7FwoAR9_c-PcRusRw"
+  },
+  {
+    "code": "HED",
+    "name": "HEDCO Petroleum & Chemical Engineering Bldg.",
+    "address": "925 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HER",
+    "name": "Heritage Hall",
+    "address": "3501 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HHR",
+    "name": "Honors House",
+    "address": "2710 Severance St.",
+    "lat": 34.0288642,
+    "lng": -118.2815604,
+    "formatted_address": "2710 Severance St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJQyAstOjHwoARDYt1aYkfvZo"
+  },
+  {
+    "code": "HIL",
+    "name": "Hillview Apts.",
+    "address": "2605 Severance St.",
+    "lat": 34.030026,
+    "lng": -118.2813161,
+    "formatted_address": "2605 Severance St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJYV7f0OjHwoAR4LbAuvfpc8A"
+  },
+  {
+    "code": "HJF",
+    "name": "Howard Jones Football Practice Field",
+    "address": "3515 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HMR",
+    "name": "Hoffman Medical Research Bldg.",
+    "address": "2011 Zonal Ave.",
+    "lat": 34.0600869,
+    "lng": -118.2054004,
+    "formatted_address": "2011 Zonal Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJw-gTe9_FwoARzCvHTZbTufg"
+  },
+  {
+    "code": "HNB",
+    "name": "HEDCO Neurosciences Bldg.",
+    "address": "3641 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HOH",
+    "name": "Hoffman Hall of Business Administration",
+    "address": "701 Exposition Blvd.",
+    "lat": 34.0173894,
+    "lng": -118.2859161,
+    "formatted_address": "701 Exposition Blvd, Los Angeles, CA 90037, USA",
+    "place_id": "ChIJY4yAluLHwoARxtA-wvTzdr8"
+  },
+  {
+    "code": "HPB",
+    "name": "Huntington Pavilion Bldg.",
+    "address": "625 Fair Oaks Ave., Suite 400, Pasadena",
+    "lat": 34.1341754,
+    "lng": -118.1503827,
+    "formatted_address": "625 Fair Oaks Ave #400, Pasadena, CA 91105, USA",
+    "place_id": "Ei82MjUgRmFpciBPYWtzIEF2ZSAjNDAwLCBQYXNhZGVuYSwgQ0EgOTExMDUsIFVTQSI6GjgKMRIvChQKEgltSDqofcPCgBEMki9qsjH_OhDxBCoUChIJCVT2KfPEwoARTEjm9KmDNjYSAzQwMA"
+  },
+  {
+    "code": "HRA",
+    "name": "Health Research Assn.",
+    "address": "1640 Marengo St.",
+    "lat": 34.0592852,
+    "lng": -118.2137312,
+    "formatted_address": "Health Research Association, 1640 Marengo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJPwJVxHPGwoARV9HoZ1lhizE"
+  },
+  {
+    "code": "HRC",
+    "name": "Human Relations Ctr.",
+    "address": "1002 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HRH",
+    "name": "Harris Residence Hall",
+    "address": "634 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HSA",
+    "name": "Health Sciences Alhambra",
+    "address": "1000 S. Fremont Ave., Alhambra, CA",
+    "lat": 34.0802806,
+    "lng": -118.1512143,
+    "formatted_address": "1000 S Fremont Ave, Alhambra, CA 91803, USA",
+    "place_id": "ChIJk6PkZA_FwoAR4pDyEDLjqMw"
+  },
+  {
+    "code": "HSH",
+    "name": "Hazel and Stanley Hall Financial Services Bldg.",
+    "address": "851 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "HSP",
+    "name": "Health Sciences Campus Parking Structure",
+    "address": "1334 Biggy St.",
+    "lat": 34.0609552,
+    "lng": -118.2063611,
+    "formatted_address": "1334 Biggy St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJs1xv8XXGwoARNXCPOSEaOIc"
+  },
+  {
+    "code": "HSR",
+    "name": "Hoover Street Residence",
+    "address": "2827 Hoover St.",
+    "lat": 34.0286499,
+    "lng": -118.2839788,
+    "formatted_address": "2827 Hoover St, Los Angeles, CA 90007, USA",
+    "place_id": "EioyODI3IEhvb3ZlciBTdCwgTG9zIEFuZ2VsZXMsIENBIDkwMDA3LCBVU0EiMRIvChQKEgnvLuwS78fCgBGMqKVqX-BLJRCLFioUChIJBz_HROTHwoAR5KgNL3bORLo"
+  },
+  {
+    "code": "HUC",
+    "name": "Hebrew Union College",
+    "address": "3077 University Ave.",
+    "lat": 34.0257472,
+    "lng": -118.2832214,
+    "formatted_address": "3077 University Ave, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJezAXweXHwoAR-qHouguiQvk"
+  },
+  {
+    "code": "IFT",
+    "name": "Ickovics Family Trust Bldg.-Fine Arts",
+    "address": "3001 S. Flower St.",
+    "lat": 34.0243266,
+    "lng": -118.2772434,
+    "formatted_address": "Roski Master of Fine Arts Gallery, 3001 Flower St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJrbV5SOfHwoAR3XiWP_bmcII"
+  },
+  {
+    "code": "IRC",
+    "name": "International Residential College",
+    "address": "3771 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "IRD",
+    "name": "Interns & Residents Dormitory",
+    "address": "2020 Zonal Ave.",
+    "lat": 34.0590574,
+    "lng": -118.2065663,
+    "formatted_address": "Intern & Resident Building, 2020 Zonal Ave, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJJUSLe3XGwoARclOpYaPGkwQ"
+  },
+  {
+    "code": "ISE",
+    "name": "Information Science Institute East",
+    "address": "3811 N. Fairfax Dr., Arlington, VA",
+    "lat": 34.0549076,
+    "lng": -118.242643,
+    "formatted_address": "Los Angeles, CA, USA",
+    "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I"
+  },
+  {
+    "code": "ISI",
+    "name": "Information Science Institute",
+    "address": "4676 Admiralty Way, Marina del Rey",
+    "lat": 33.9803656,
+    "lng": -118.4400862,
+    "formatted_address": "4676 Admiralty Way, Marina Del Rey, CA 90292, USA",
+    "place_id": "ChIJ-XLqfYC6woAR356XxY9UhR4"
+  },
+  {
+    "code": "JEF",
+    "name": "Jefferson Bldg.",
+    "address": "950 W. Jefferson Blvd.",
+    "lat": 34.0247376,
+    "lng": -118.2869118,
+    "formatted_address": "Jefferson Building, 950 W Jefferson Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ81NgOuXHwoARr36N1bK9UUY"
+  },
+  {
+    "code": "JEP",
+    "name": "Joint Educational Project House",
+    "address": "801 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "JHH",
+    "name": "John Hubbard Hall, Student Administrative Services",
+    "address": "700 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "JKP",
+    "name": "Jane Popovich and J. Kristoffer Popovich Hall",
+    "address": "611 Exposition Blvd.",
+    "lat": 34.018873,
+    "lng": -118.284687,
+    "formatted_address": "611 Exposition Blvd, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJT7lEVuLHwoAR8p6uxW_-sLc"
+  },
+  {
+    "code": "JMA",
+    "name": "Jewel Manor Apartment",
+    "address": "2801 Orchard Ave.",
+    "lat": 34.029343,
+    "lng": -118.2878422,
+    "formatted_address": "2801 Orchard Ave., Los Angeles, CA 90007, USA",
+    "place_id": "ChIJJy8nKO7HwoARFr80w5z9IXU"
+  },
+  {
+    "code": "JMC",
+    "name": "John McKay Ctr.",
+    "address": "940 W. 35th St.",
+    "lat": 34.0231494,
+    "lng": -118.2876974,
+    "formatted_address": "940 W 35th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJcfDA0uTHwoARzj49ZTnnvxM"
+  },
+  {
+    "code": "KAM",
+    "name": "Keith Administration Bldg.; Mayer Medical Teaching Ctr.",
+    "address": "1975 Zonal Ave.",
+    "lat": 34.0610367,
+    "lng": -118.2053915,
+    "formatted_address": "Keith Administration Building, 1975 Zonal Ave, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJqdmxXt_FwoAROha3WvxOHsE"
+  },
+  {
+    "code": "KAP",
+    "name": "Kaprielian Hall",
+    "address": "3620 S. Vermont Ave.",
+    "lat": 34.0224037,
+    "lng": -118.2910575,
+    "formatted_address": "Kaprielian Hall, 3620 S Vermont Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJGd0rqfvHwoARXzZmE_Crmeg"
+  },
+  {
+    "code": "KCH",
+    "name": "Kerckhoff Carriage House",
+    "address": "734 W. Adams Blvd.",
+    "lat": 34.0290571,
+    "lng": -118.2795964,
+    "formatted_address": "734 W Adams Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJMd7ckejHwoAR6L32B-TE3wk"
+  },
+  {
+    "code": "KER",
+    "name": "Kerckhoff Hall",
+    "address": "734 W. Adams Blvd.",
+    "lat": 34.0290571,
+    "lng": -118.2795964,
+    "formatted_address": "734 W Adams Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJMd7ckejHwoAR6L32B-TE3wk"
+  },
+  {
+    "code": "KOH",
+    "name": "Frank L. King Olympic Hall of Champions",
+    "address": "1025 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "KSH",
+    "name": "University Club at King Stoops Hall",
+    "address": "705 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LAB",
+    "name": "La Sorbonne Apts.",
+    "address": "1170 W. 31st St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LAC",
+    "name": "Los Angeles County + USC Hospital",
+    "address": "1200 N. State St.",
+    "lat": 34.0580024,
+    "lng": -118.2088248,
+    "formatted_address": "1200 N State St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJjQqnP3TGwoARhu_YXsVES5E"
+  },
+  {
+    "code": "LAW",
+    "name": "Elvon and Mabel Musick Law Bldg.",
+    "address": "699 Exposition Blvd.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LCA",
+    "name": "Lambda Chi Alpha fraternity",
+    "address": "720 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LHI",
+    "name": "Donald P. and Katherine B. Loker Hydrocarbon Inst.",
+    "address": "837 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LJS",
+    "name": "Laird J. Stabler Memorial Hall",
+    "address": "840 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LMJ",
+    "name": "Lorraine and Marvin Jacobs Bldg.",
+    "address": "1150 S. Hope St., Unit B",
+    "lat": 34.0408242,
+    "lng": -118.2642381,
+    "formatted_address": "1150 S Hope St b, Los Angeles, CA 90015, USA",
+    "place_id": "EiwxMTUwIFMgSG9wZSBTdCBiLCBMb3MgQW5nZWxlcywgQ0EgOTAwMTUsIFVTQSIdGhsKFgoUChIJ9Vawc8jHwoARhQqn9kgrTjISAWI"
+  },
+  {
+    "code": "LRC",
+    "name": "General William Lyon University Ctr.",
+    "address": "1026 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LTS",
+    "name": "Katherine B. Loker Track Stadium",
+    "address": "3550 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "LVL",
+    "name": "Thomas and Dorothy Leavey Library",
+    "address": "650 W. 35th St.",
+    "lat": 34.02162,
+    "lng": -118.2827,
+    "formatted_address": "650 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJjWyU7-PHwoARRmDpozLADjQ"
+  },
+  {
+    "code": "MAB",
+    "name": "Manor Apts.",
+    "address": "2636 Portland St.",
+    "lat": 34.029822,
+    "lng": -118.2824355,
+    "formatted_address": "Manor Apartments, 2636 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJQ9CPLu_HwoARTp2c0N2ZJM0"
+  },
+  {
+    "code": "MBC",
+    "name": "McDonald Becket Center",
+    "address": "850 W. Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MCA",
+    "name": "McKibben Addition",
+    "address": "1333 San Pablo St.",
+    "lat": 34.0604562,
+    "lng": -118.204508,
+    "formatted_address": "1333 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJBxtobd_FwoARMIrTCc6BF3A"
+  },
+  {
+    "code": "MCC",
+    "name": "McClintock Building",
+    "address": "1010 W. Jefferson Blvd.",
+    "lat": 34.0249043,
+    "lng": -118.2873568,
+    "formatted_address": "University Computing Center, 1010 W Jefferson Blvd, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ13t5NuXHwoARcEuQV-GkYhc"
+  },
+  {
+    "code": "MCH",
+    "name": "McKibben Hall",
+    "address": "1333 San Pablo St.",
+    "lat": 34.0604562,
+    "lng": -118.204508,
+    "formatted_address": "1333 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJBxtobd_FwoARMIrTCc6BF3A"
+  },
+  {
+    "code": "MCT",
+    "name": "McCulloch Townhomes",
+    "address": "953 W. 30th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MFT",
+    "name": "Mani Figueroa Tower",
+    "address": "801 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MHP",
+    "name": "Mudd Memorial Hall of Philosophy",
+    "address": "3709 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MMR",
+    "name": "Mudd Memorial Research Bldg.",
+    "address": "1333 San Pablo St.",
+    "lat": 34.0604562,
+    "lng": -118.204508,
+    "formatted_address": "1333 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJBxtobd_FwoARMIrTCc6BF3A"
+  },
+  {
+    "code": "MOL",
+    "name": "Medical Oncology Lab",
+    "address": "1237 N. Mission Rd.",
+    "lat": 34.0625563,
+    "lng": -118.2118852,
+    "formatted_address": "1237 N Mission Rd, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJcx4ELXHGwoARHa2EDATEEA8"
+  },
+  {
+    "code": "MRF",
+    "name": "Montgomery Ross Fisher Bldg.",
+    "address": "669 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MSC",
+    "name": "Marine Sciences Ctr. Lab",
+    "address": "Catalina Island",
+    "lat": 33.3878856,
+    "lng": -118.4163103,
+    "formatted_address": "Santa Catalina Island, California 90704, USA",
+    "place_id": "ChIJJYvheyNv3YARqw71xdWjWT4"
+  },
+  {
+    "code": "MSR",
+    "name": "Marine Science Center Residence Hall",
+    "address": "Catalina Island",
+    "lat": 33.3878856,
+    "lng": -118.4163103,
+    "formatted_address": "Santa Catalina Island, California 90704, USA",
+    "place_id": "ChIJJYvheyNv3YARqw71xdWjWT4"
+  },
+  {
+    "code": "MTS",
+    "name": "Marks Tennis Stadium",
+    "address": "1075 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MUS",
+    "name": "Albert S. Raubenheimer Music Faculty Memorial Bldg.",
+    "address": "840 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "MVB",
+    "name": "Mountain View Bldg.",
+    "address": "480 San Antonio Rd., Mountain View",
+    "lat": 37.4044474,
+    "lng": -122.1123685,
+    "formatted_address": "480 San Antonio Rd, Mountain View, CA 94040, USA",
+    "place_id": "ChIJY5Pz1J2wj4AR-mxsmlagr9c"
+  },
+  {
+    "code": "NCT",
+    "name": "Norris Cinema Theatre",
+    "address": "3507 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "NEW",
+    "name": "New Residential College",
+    "address": "635 W. 35th St.",
+    "lat": 34.0231176,
+    "lng": -118.2876319,
+    "formatted_address": "635 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJUU4K8ePHwoARuMhTasWdlBw"
+  },
+  {
+    "code": "NML",
+    "name": "Norris Medical Library",
+    "address": "2003 Zonal Ave.",
+    "lat": 34.0609249,
+    "lng": -118.204895,
+    "formatted_address": "Norris Medical Library, 2003 Zonal Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ__7nad_FwoARpAusS_Y-cC8"
+  },
+  {
+    "code": "NOR",
+    "name": "USC/Norris Comprehensive Cancer Ctr.",
+    "address": "1441 Eastlake Ave.",
+    "lat": 34.0611758,
+    "lng": -118.2049079,
+    "formatted_address": "USC/Norris Comprehensive Cancer Center and Hospital, 1441 Eastlake Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJwTEARN_FwoARuFGs7EO_LFA"
+  },
+  {
+    "code": "NRC",
+    "name": "North Residential College",
+    "address": "635 W. 35th St.",
+    "lat": 34.0231176,
+    "lng": -118.2876319,
+    "formatted_address": "635 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJUU4K8ePHwoARuMhTasWdlBw"
+  },
+  {
+    "code": "NRT",
+    "name": "Harlyne J. Norris Research Tower",
+    "address": "1450 Biggy St.",
+    "lat": 34.061989,
+    "lng": -118.2050746,
+    "formatted_address": "Harlyne J. Norris Research Tower, 1450 Biggy St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJmaLATd_FwoAR81702_zebZM"
+  },
+  {
+    "code": "NTT",
+    "name": "Dr. Norman Topping Tower",
+    "address": "1441 Eastlake Ave.",
+    "lat": 34.0611758,
+    "lng": -118.2049079,
+    "formatted_address": "USC/Norris Comprehensive Cancer Center and Hospital, 1441 Eastlake Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJwTEARN_FwoARuFGs7EO_LFA"
+  },
+  {
+    "code": "OCC",
+    "name": "Orange County Ctr.",
+    "address": "2300 Michelson Dr., Irvine, 92714",
+    "lat": 33.6759981,
+    "lng": -117.8543014,
+    "formatted_address": "2300 Michelson Dr, Irvine, CA 92612, USA",
+    "place_id": "ChIJFzU5qYze3IARHP2kvLey80U"
+  },
+  {
+    "code": "OCW",
+    "name": "Harold E. and Lillian M. Moulton Organic Chemistry Wing",
+    "address": "810 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "OHE",
+    "name": "Olin Hall of Engineering",
+    "address": "3650 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ONE",
+    "name": "One Institute",
+    "address": "909 W. Adams Blvd.",
+    "lat": 34.0310045,
+    "lng": -118.2815807,
+    "formatted_address": "909 W Adams Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJZVj0MenHwoARkntnZEGDivk"
+  },
+  {
+    "code": "OSP",
+    "name": "Our Savior Parish and USC Caruso Catholic Center",
+    "address": "844 W. 32nd St.",
+    "lat": 34.0252202,
+    "lng": -118.2834452,
+    "formatted_address": "844 W 32nd St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJi823t-XHwoARGZcd7kGF7ms"
+  },
+  {
+    "code": "PCA",
+    "name": "Pacific Apts.",
+    "address": "2637 Severance St.",
+    "lat": 34.0294467,
+    "lng": -118.281834,
+    "formatted_address": "Pacific Apartments, 2637 Severance St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJlUblzOjHwoARv9yRR46XJaM"
+  },
+  {
+    "code": "PCE",
+    "name": "Petroleum and Chemical Engineering Bldg.",
+    "address": "923 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PED",
+    "name": "Physical Education Bldg.",
+    "address": "3560 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PHE",
+    "name": "Powell Hall",
+    "address": "3737 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PHH",
+    "name": "Phinney Hall",
+    "address": "1721 Griffin Ave.",
+    "lat": 34.0634163,
+    "lng": -118.2117856,
+    "formatted_address": "Phinney Hall, 1721 Griffin Ave, Lincoln Heights, CA 90031, USA",
+    "place_id": "ChIJ-0le03DGwoARj5fcNAKjeZQ"
+  },
+  {
+    "code": "PKS",
+    "name": "Parkside Apts.",
+    "address": "3730 S. McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PRB",
+    "name": "Parkside Residential Building",
+    "address": "920 West 37th Place",
+    "lat": 34.0186479,
+    "lng": -118.2899377,
+    "formatted_address": "South, 920 W 37th Pl, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ7wIC8PzHwoARY6GdduVwgH0"
+  },
+  {
+    "code": "PSA",
+    "name": "Parking Structure A, Lot 33",
+    "address": "3667 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PSB",
+    "name": "Parking Structure B, Lot 1",
+    "address": "1150 Jefferson Blvd.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PSC",
+    "name": "John Stauffer Pharmaceutical Sciences Ctr.",
+    "address": "1985 Zonal Ave.",
+    "lat": 34.0603766,
+    "lng": -118.2059524,
+    "formatted_address": "1985 Zonal Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJH3HViHXGwoARNM11ZwRc1JM"
+  },
+  {
+    "code": "PSD",
+    "name": "Parking Structure D",
+    "address": "649 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "PSO",
+    "name": "Parking Structure One",
+    "address": "3701 S. Flower St.",
+    "lat": 34.01751,
+    "lng": -118.281558,
+    "formatted_address": "3701 Flower St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJE9vjAeLHwoAR-pbUN7xink4"
+  },
+  {
+    "code": "PSX",
+    "name": "Parking Structure C",
+    "address": "620 W. McCarthy Way",
+    "lat": 34.0204821,
+    "lng": -118.2819819,
+    "formatted_address": "620 USC McCarthy Way, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJRZRCd-HHwoARvedegxfGJWw"
+  },
+  {
+    "code": "PTD",
+    "name": "Pardee Tower",
+    "address": "614 Hellman Way",
+    "lat": 34.0200237,
+    "lng": -118.2826438,
+    "formatted_address": "Pardee Tower, 614 Hellman Way, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ9STzLOLHwoARCZxNJc4fMNg"
+  },
+  {
+    "code": "PVB",
+    "name": "Playa Vista Bldg.",
+    "address": "12015 E. Waterfront Dr., Playa Vista",
+    "lat": 33.9828194,
+    "lng": -118.4037653,
+    "formatted_address": "12015 E Waterfront Dr, Los Angeles, CA 90094, USA",
+    "place_id": "EjExMjAxNSBFIFdhdGVyZnJvbnQgRHIsIExvcyBBbmdlbGVzLCBDQSA5MDA5NCwgVVNBIjESLwoUChIJy6gLvKiwwoARwBIYcI6UTgQQ710qFAoSCc9mfeKlsMKAEdhm_eV4nJvR"
+  },
+  {
+    "code": "PVT",
+    "name": "Playa Vista Bldg. Two",
+    "address": "12025 Waterfront Dr., Playa Vista",
+    "lat": 33.9828496,
+    "lng": -118.4047858,
+    "formatted_address": "12025 E Waterfront Dr, Los Angeles, CA 90094, USA",
+    "place_id": "EjExMjAyNSBFIFdhdGVyZnJvbnQgRHIsIExvcyBBbmdlbGVzLCBDQSA5MDA5NCwgVVNBIjESLwoUChIJiRySHaawwoARCf2xIzVOpo8Q-V0qFAoSCc9mfeKlsMKAEdhm_eV4nJvR"
+  },
+  {
+    "code": "RAN",
+    "name": "Hoffman Contracts Bldg.",
+    "address": "3716 S. Hope St.",
+    "lat": 34.0165099,
+    "lng": -118.27956,
+    "formatted_address": "3716 S Hope St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJwVgHWwrIwoARzmb-IkyRuz0"
+  },
+  {
+    "code": "RGA",
+    "name": "Regent Apts.",
+    "address": "1138 W. 29th St.",
+    "lat": 34.0281116,
+    "lng": -118.2849604,
+    "formatted_address": "1138 W 29th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ38Sbn-_HwoARBdANarn5fEY"
+  },
+  {
+    "code": "RGL",
+    "name": "Ralph and Goldy Lewis Hall",
+    "address": "650 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RHM",
+    "name": "Ramo Hall of Music",
+    "address": "830 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RHR",
+    "name": "Radisson Hotel Restaurant",
+    "address": "3520 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RMH",
+    "name": "Radisson Midcity Hotel",
+    "address": "3540 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RMR",
+    "name": "Raulston Medical Research Bldg.",
+    "address": "2025 Zonal Ave.",
+    "lat": 34.0598437,
+    "lng": -118.2048461,
+    "formatted_address": "Raulston Medical Research Building, 2025 Zonal Ave, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJu2yKdd_FwoARZFJZlDYPjIs"
+  },
+  {
+    "code": "ROY",
+    "name": "Royal St. House",
+    "address": "3014 Royal St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RRB",
+    "name": "Rapp Engineering Research Bldg.",
+    "address": "854 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RRI",
+    "name": "Ray R. Irani Hall",
+    "address": "1050 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RTA",
+    "name": "Regal Trojan Apts.",
+    "address": "870 W. Adams Blvd.",
+    "lat": 34.0301551,
+    "lng": -118.2817643,
+    "formatted_address": "870 W Adams Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJC48W1ejHwoARWLzY7CnqJa0"
+  },
+  {
+    "code": "RTH",
+    "name": "Ronald Tutor Hall of Engineering",
+    "address": "3710 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "RZC",
+    "name": "Robert Zemeckis Ctr. for Digital Arts",
+    "address": "3131 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SAC",
+    "name": "Sacramento Center",
+    "address": "1800 I Street, Sacramento, CA",
+    "lat": 34.0549076,
+    "lng": -118.242643,
+    "formatted_address": "Los Angeles, CA, USA",
+    "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I"
+  },
+  {
+    "code": "SAI",
+    "name": "Stardust Apts.",
+    "address": "634 W. 27th St.",
+    "lat": 34.0273759,
+    "lng": -118.2780016,
+    "formatted_address": "634 W 27th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ8WqZuOfHwoARkFuIsnwvOs4"
+  },
+  {
+    "code": "SAL",
+    "name": "Salvatori Computer Science Ctr.",
+    "address": "941 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SCA",
+    "name": "School of Cinematic Arts",
+    "address": "900 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SCB",
+    "name": "School of Cinematic Arts Bldg. B",
+    "address": "930 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SCC",
+    "name": "School of Cinematic Arts Bldg. C",
+    "address": "935 W. 35th St.",
+    "lat": 34.02331,
+    "lng": -118.28731,
+    "formatted_address": "935 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ0V5x0eTHwoARfRH3W_I87IA"
+  },
+  {
+    "code": "SCD",
+    "name": "Scene Dock (Theatre)",
+    "address": "1030 W. 37th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SCE",
+    "name": "School of Cinematic Arts Bldg. E",
+    "address": "905 W. 35th St.",
+    "lat": 34.0230125,
+    "lng": -118.2866393,
+    "formatted_address": "905 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJYQQBxOTHwoARs5Hl_AmsFK0"
+  },
+  {
+    "code": "SCI",
+    "name": "School of Cinematic Arts Bldg. I",
+    "address": "3470 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SCP",
+    "name": "South Coast Plaza Bldg.",
+    "address": "3333 Bristol St., Costa Mesa",
+    "lat": 33.6911771,
+    "lng": -117.8874488,
+    "formatted_address": "3333 Bristol St, Costa Mesa, CA 92626, USA",
+    "place_id": "ChIJb5NgHiXf3IARVI98Tfy4iX8"
+  },
+  {
+    "code": "SCX",
+    "name": "School of Cinematic Arts Bldg. D",
+    "address": "915 W. 35th St.",
+    "lat": 34.0230585,
+    "lng": -118.2867419,
+    "formatted_address": "915 W 35th St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJS8xAxOTHwoARBjBwSaXZGmA"
+  },
+  {
+    "code": "SGA",
+    "name": "Seven Gables Apts.",
+    "address": "620-626 W. 30th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SGM",
+    "name": "Seeley G. Mudd Bldg.",
+    "address": "3620 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SHS",
+    "name": "Stauffer Hall of Science",
+    "address": "835 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SIE",
+    "name": "Sierra Apts.",
+    "address": "2638 Portland St.",
+    "lat": 34.02949,
+    "lng": -118.2824724,
+    "formatted_address": "Sierra Apartments, 2638 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ5So3Lu_HwoARGjve3mz_K0Y"
+  },
+  {
+    "code": "SKS",
+    "name": "Steven and Kathryn Sample Hall",
+    "address": "3607 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SLH",
+    "name": "Stauffer Science Lecture Hall",
+    "address": "831 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SMF",
+    "name": "Soni-McAlister Field",
+    "address": "3000 S. Hoover St.",
+    "lat": 34.0270898,
+    "lng": -118.2839795,
+    "formatted_address": "3000 S Hoover St, Los Angeles, CA 90007, USA",
+    "place_id": "EiwzMDAwIFMgSG9vdmVyIFN0LCBMb3MgQW5nZWxlcywgQ0EgOTAwMDcsIFVTQSIxEi8KFAoSCSf07Ijlx8KAEVKWsaOH5qteELgXKhQKEgll8gdwmsfCgBFM2Usb5-twVw"
+  },
+  {
+    "code": "SNA",
+    "name": "Senator Apts.",
+    "address": "1101-1109 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SOS",
+    "name": "Social Science Bldg.",
+    "address": "3502 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SPA",
+    "name": "Shrine Place Apartments",
+    "address": "3015-3017 Shrine Pl.",
+    "lat": 34.0253953,
+    "lng": -118.2802463,
+    "formatted_address": "3015 Shrine Pl, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJb8hS9ObHwoARHNVB8MuLhb4"
+  },
+  {
+    "code": "SSA",
+    "name": "Severance St. Apts.",
+    "address": "2630 Severance St.",
+    "lat": 34.02937,
+    "lng": -118.2811004,
+    "formatted_address": "2630 Severance St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJH061x-jHwoARGbbKYQzIMac"
+  },
+  {
+    "code": "SSB",
+    "name": "Soto Street Building",
+    "address": "2001 N. Soto St.",
+    "lat": 34.0666207,
+    "lng": -118.1974284,
+    "formatted_address": "2001 N Soto St, Los Angeles, CA 90032, USA",
+    "place_id": "ChIJGeJaq9vFwoARyxUy5Fn6r3U"
+  },
+  {
+    "code": "SSC",
+    "name": "Seaver Science Ctr.",
+    "address": "920 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SSH",
+    "name": "Severance St. House",
+    "address": "2716 Severance St.",
+    "lat": 34.0286939,
+    "lng": -118.2815999,
+    "formatted_address": "2716 Severance St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJW3b6s-jHwoARfox1HueqQ4c"
+  },
+  {
+    "code": "SSL",
+    "name": "Seaver Science Library",
+    "address": "910 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "STO",
+    "name": "Stonier Hall",
+    "address": "837 Downey Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "STU",
+    "name": "Gwynn Wilson Student Union Bldg.",
+    "address": "3601 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "SUN",
+    "name": "Sunset Apts.",
+    "address": "1144 W. 29th St.",
+    "lat": 34.0281241,
+    "lng": -118.2852187,
+    "formatted_address": "1144 W 29th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ1c5Un-_HwoARe9b94PjoUp4"
+  },
+  {
+    "code": "SWC",
+    "name": "Social Work Ctr.",
+    "address": "655 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TAP",
+    "name": "Troyland Apts.",
+    "address": "955-959 W. Adams Blvd.",
+    "lat": 34.0315012,
+    "lng": -118.2830478,
+    "formatted_address": "955 W Adams Blvd, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJzxAtvO7HwoARGG1lJAr4djY"
+  },
+  {
+    "code": "TCC",
+    "name": "Ronald Tutor Campus Center",
+    "address": "3607 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TCX",
+    "name": "Tennis Court I",
+    "address": "1015 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TGF",
+    "name": "Town and Gown",
+    "address": "665 Exposition Blvd.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "THH",
+    "name": "Taper Hall of Humanities",
+    "address": "3501 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "THR",
+    "name": "Two Harbors Residences",
+    "address": "Two Harbors, Catalina Island",
+    "lat": 33.44,
+    "lng": -118.49833,
+    "formatted_address": "Two Harbors, CA 90704, USA",
+    "place_id": "ChIJn0C3U8Vn3YARbJBVsZv4d0M"
+  },
+  {
+    "code": "TMC",
+    "name": "The Music Complex",
+    "address": "3450 Watt Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TOW",
+    "name": "Tower Hall",
+    "address": "1711 N. Griffin Ave.",
+    "lat": 34.0737022,
+    "lng": -118.211729,
+    "formatted_address": "1711 N Griffin Ave, Los Angeles, CA 90031, USA",
+    "place_id": "Ei4xNzExIE4gR3JpZmZpbiBBdmUsIExvcyBBbmdlbGVzLCBDQSA5MDAzMSwgVVNBIjESLwoUChIJ9erj133GwoARDti7rZxYgloQrw0qFAoSCaesC76CxsKAEcB2n_Pw5mfp"
+  },
+  {
+    "code": "TPA",
+    "name": "Twin Palms Apts.",
+    "address": "2635 Portland St.",
+    "lat": 34.0299766,
+    "lng": -118.2830724,
+    "formatted_address": "2635 Portland St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJjUBX3-7HwoARCxtUv9Tn-6M"
+  },
+  {
+    "code": "TRF",
+    "name": "Temporary Research Facility",
+    "address": "3430 S. Vermont Ave.",
+    "lat": 34.0251645,
+    "lng": -118.2905291,
+    "formatted_address": "3430 S Vermont Ave, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJJcPcffrHwoARcpZ-_SrZTmk"
+  },
+  {
+    "code": "TRH",
+    "name": "Troy Hall",
+    "address": "3025 Royal St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TRO",
+    "name": "Trojan Hall",
+    "address": "615 Childs Way",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TSA",
+    "name": "Terrace Apts.",
+    "address": "2822-2830 Ellendale Pl.",
+    "lat": 34.0287702,
+    "lng": -118.2885394,
+    "formatted_address": "2822 Ellendale Pl, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ-aykzfHHwoARU4Qqi7t_gBQ"
+  },
+  {
+    "code": "TTL",
+    "name": "Technical Theatre Lab.",
+    "address": "1020 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TUS",
+    "name": "Tuscany",
+    "address": "3760 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "TYL",
+    "name": "Tyler Bldg.",
+    "address": "3601 S. Flower St.",
+    "lat": 34.0181771,
+    "lng": -118.2812562,
+    "formatted_address": "Tyler Building, 3601 Flower St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJx7Ne-uHHwoAR2gZi7IN_d0M"
+  },
+  {
+    "code": "UAC",
+    "name": "Uytengsu Aquatics Center",
+    "address": "3441 McClintock Ave.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "UGB",
+    "name": "University Gardens",
+    "address": "3500 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "UGW",
+    "name": "University Gateway",
+    "address": "3335 S. Figueroa St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "UHP",
+    "name": "University Hosp. Parking",
+    "address": "1538 San Pablo St.",
+    "lat": 34.0624586,
+    "lng": -118.2018307,
+    "formatted_address": "1538 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJE2c41djFwoARnyMtwv5_Yeo"
+  },
+  {
+    "code": "UNH",
+    "name": "USC University Hosp.",
+    "address": "1500 San Pablo St.",
+    "lat": 34.0620584,
+    "lng": -118.2012738,
+    "formatted_address": "1500 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJCQEsvt7FwoARlYU5TZu_ABY"
+  },
+  {
+    "code": "UPX",
+    "name": "University Parking Ctr.",
+    "address": "3401 S. Grand Ave.",
+    "lat": 34.0200103,
+    "lng": -118.2772156,
+    "formatted_address": "Grand Avenue Structure, 3401 S Grand Ave, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJWXt7FODHwoARW9mFAEFa5dk"
+  },
+  {
+    "code": "URA",
+    "name": "University Regent Apts.",
+    "address": "1219 W. 27th St.",
+    "lat": 34.0305924,
+    "lng": -118.2870666,
+    "formatted_address": "1219 W 27th St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJBWQEGu7HwoARfCfXoMcqCaw"
+  },
+  {
+    "code": "URC",
+    "name": "University Religious Ctr.",
+    "address": "835 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "URH",
+    "name": "University Residence Hall",
+    "address": "616 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "UUC",
+    "name": "United University Church",
+    "address": "817 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "UVI",
+    "name": "University Village",
+    "address": "3375 S. Hoover St.",
+    "lat": 34.0278481,
+    "lng": -118.2835017,
+    "formatted_address": "3375 S Hoover St, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJ2yuUZ-_HwoARZ5XzvuvmltY"
+  },
+  {
+    "code": "VBB",
+    "name": "Valley Blvd. Bldg.",
+    "address": "4351 E. Valley Blvd.",
+    "lat": 34.06355,
+    "lng": -118.19105,
+    "formatted_address": "4351 E Valley Blvd, Los Angeles, CA 90032, USA",
+    "place_id": "ChIJP2cRr8PFwoARW08SPSvX5zg"
+  },
+  {
+    "code": "VHE",
+    "name": "Vivian Hall of Engineering",
+    "address": "3651 Watt Way",
+    "lat": 34.0202774,
+    "lng": -118.2881006,
+    "formatted_address": "university of southern california, 3651 Watt Way, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJbVkNsfzHwoARRq1EHjku_Z4"
+  },
+  {
+    "code": "VIS",
+    "name": "Vista Apts.",
+    "address": "2701 Severance St.",
+    "lat": 34.0292473,
+    "lng": -118.2819579,
+    "formatted_address": "Vista Apartments, 2701 Severance St, Los Angeles, CA 90007, USA",
+    "place_id": "ChIJN9iuNO_HwoARxQ65ivE2Buc"
+  },
+  {
+    "code": "VKC",
+    "name": "Von KleinSmid Ctr. for International and Public Affairs",
+    "address": "3518 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "VWB",
+    "name": "Valley Warehouse Bldg.",
+    "address": "4121 Valley Blvd.",
+    "lat": 34.06483,
+    "lng": -118.194347,
+    "formatted_address": "4121 Valley Blvd, Los Angeles, CA 90032, USA",
+    "place_id": "ChIJ_0-GqtzFwoARGHtGr0XIzko"
+  },
+  {
+    "code": "WAH",
+    "name": "Watt Hall of Architecture and Fine Arts",
+    "address": "850 Bloom Walk",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "WIN",
+    "name": "Windsor Apts.",
+    "address": "1149 W. 28th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "WPH",
+    "name": "Waite Phillips Hall",
+    "address": "3470 Trousdale Pkwy.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "WTO",
+    "name": "Webb Tower",
+    "address": "1015 W. 34th St.",
+    "lat": 34.0223519,
+    "lng": -118.285117,
+    "formatted_address": "Los Angeles, CA 90007, USA",
+    "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo"
+  },
+  {
+    "code": "ZHS",
+    "name": "Zumberge Hall of Science",
+    "address": "3651 Trousdale Pkwy.",
+    "lat": 34.0202774,
+    "lng": -118.2881006,
+    "formatted_address": "university of southern california, 3651 Watt Way, Los Angeles, CA 90089, USA",
+    "place_id": "ChIJbVkNsfzHwoARRq1EHjku_Z4"
+  },
+  {
+    "code": "ZNI",
+    "name": "Zilkha Neurogenetic Institute",
+    "address": "1501 San Pablo St.",
+    "lat": 34.0623986,
+    "lng": -118.2034691,
+    "formatted_address": "1501 San Pablo St, Los Angeles, CA 90033, USA",
+    "place_id": "ChIJqx-FMt_FwoARC0EnPU8qX3w"
+  }
+]
