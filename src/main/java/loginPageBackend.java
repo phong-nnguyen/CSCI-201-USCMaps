@@ -5,10 +5,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.*;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @WebServlet("/loginPageBackend")
 public class loginPageBackend extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
+    private static final Map<String, String> credentialCache = new ConcurrentHashMap<>();
 
 	@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -39,6 +43,12 @@ public class loginPageBackend extends HttpServlet {
     }
 
     private String checkPass(String user, String pass) {
+
+        String stored = credentialCache.get(user);
+        if (stored != null) {
+            return stored.equals(pass) ? "Success": "Password incorrect";
+        }
+
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -107,7 +117,12 @@ public class loginPageBackend extends HttpServlet {
             ps.setString(6, phoneNumber);
             
             int result = ps.executeUpdate();
-            return result == 1 ? "Success" : "Registration failed";
+            if (result == 1) {
+                    credentialCache.put(user, pass);
+                    return "Success";
+                } else {
+                    return "Registration failed";
+            }
             
         } catch(SQLException | ClassNotFoundException e) {
             e.printStackTrace();
