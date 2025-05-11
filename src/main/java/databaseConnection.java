@@ -7,9 +7,9 @@ public class databaseConnection {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         
-        String sqlUrl = "jdbc:mysql://localhost:3306/trojanMapsDb";
+        String sqlUrl = "jdbc:mysql://localhost/trojanMapsDB";
         String sqlUser = "root";
-        String sqlPassword = "root";
+        String sqlPassword = "password";
         
         return DriverManager.getConnection(sqlUrl, sqlUser, sqlPassword);
     }

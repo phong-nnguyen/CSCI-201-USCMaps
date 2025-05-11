@@ -14,11 +14,11 @@ import java.sql.*;
 public class getLocationServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private static final String JDBC_URL  = "jdbc:mysql://localhost:3306/uscmapsdb";
+    private static final String JDBC_URL  = "jdbc:mysql://localhost/trojanMapsDB";
     private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "root";
+    private static final String JDBC_PASS = "Philbert1108";
 
-    private final Gson gson = new Gson();
+    private Gson gson = new Gson();
 
     @Override
     public void init() throws ServletException {
@@ -40,7 +40,7 @@ public class getLocationServlet extends HttpServlet {
         BufferedReader reader = req.getReader();
         JsonObject json = gson.fromJson(reader, JsonObject.class);
 
-        String address = json.has("address") ? json.get("address").getAsString() : null;
+        String address = json.get("address").getAsString();
 
         if (address == null || address.trim().isEmpty()) {
             resp.setStatus(400);
@@ -51,9 +51,10 @@ public class getLocationServlet extends HttpServlet {
         }
 
         String sql = "SELECT lattitude, longitude FROM locations WHERE address = ?";
-        try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASS);
-             PreparedStatement ps = conn.prepareStatement(sql))
-        {
+        try{
+            Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASS);
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
             ps.setString(1, address.trim());
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {

@@ -5,186 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrojanMap Friends</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="friends.css" rel="stylesheet">
+    <link rel="icon" href="images/Logos/TrojanMap_White_Logo.png">
   </head>
   
   <body>
-    <div id = "bar">
-      <button id = "add-friends">Add Friend Group</button>
-      <!-- add friend groups dynamically -->
-      <div id ="friends-bar">
-        <button class ="group">USC Study Buddies</button>
-      </div>
-    </div>
-
-    <div id = "friend-overlay">
-      <div id = "friend-popup">
-        <div id = "popup-header">
-          <h2>Create Friend Group</h2>
-          <div id ="close">
-            <img id ="close-button" src="x.png" alt="close popup">
-          </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/Logos/TrojanMap_White_Logo.png" alt="USC Logo">
         </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="friends.html">Friends</a></li>
+          <li class="auth-links login-link"><a href="login.html">Login</a></li>
+          <li class="auth-links register-link"><a href="register.html">Register</a></li>
+          <li class="user-welcome" style="display: none;">
+            Welcome, <span id="username"></span>!
+          </li>
+          <li class="logout-link" style="display: none;">
+            <a href="#" id="logout-btn">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <form id ="add-group">
-          <div class = "input-group">
-              <p class ="input-label">Group Name:</p>
-              <input id = "name-input" class ="input" type="text" name="groupName" placeholder="Enter Goup Name" required>
-              <p id ="name-error" class = "error-message">Group Name cannot be empty.</p>
+
+   <div class="content-container">
+      <div id="bar">
+        <button id="add-friends">Add Friend Group</button>
+        <div id="friends-bar">
+        </div>
+      </div>
+
+      <div id="friend-overlay">
+        <div id="friend-popup">
+          <div id="popup-header">
+            <h2>Create Friend Group</h2>
+            <div id="close">
+              <img id="close-button" src="images/x.png" alt="close popup">
+            </div>
           </div>
 
-          <div class = "input-group">
-            <p class ="input-label">Email One: </p>
-            <input id = "email-input-one" class ="input" type="email" name="emailOne" placeholder="Enter Email" required>
-            <p id ="email-error-one" class = "error-message">Please enter a unique email.</p>
-          </div>
+          <form id="add-group">
+          
+          	<div class="input-group">
+              <p class="input-label">Group Name: </p>
+              <input id="group-name" class="input" type="text" name="groupName" placeholder="Enter group name" required>
+            </div>
+            
+            <div class="input-group">
+              <p class="input-label">Email One: </p>
+              <input id="email-input-one" class="input" type="text" name="emailOne" placeholder="Enter username" required>
+              <p id="email-error-one" class="error-message">Please enter a unique username.</p>
+            </div>
 
-          <div class = "input-group">
-            <p class ="input-label">Email Two: </p>
-            <input id = "email-input-two" class ="input" type="email" name="emailTwo" placeholder="Enter Email" required>
-            <p id ="email-error-two" class = "error-message">Please enter a unique email.</p>
-          </div>
+            <div class="input-group">
+              <p class="input-label">Email Two: </p>
+              <input id="email-input-two" class="input" type="text" name="emailTwo" placeholder="Enter username" required>
+              <p id="email-error-two" class="error-message">Please enter a unique username.</p>
+            </div>
 
-          <div class = "input-group">
-            <p class ="input-label">Email Three: </p>
-            <input id = "email-input-three" class ="input" type="email" name="emailThree" placeholder="Enter Email" required>
-            <p id ="email-error-three" class = "error-message">Please enter a unique email.</p>
-          </div>
+            <div class="input-group">
+              <p class="input-label">Email Three: </p>
+              <input id="email-input-three" class="input" type="text" name="emailThree" placeholder="Enter username" required>
+              <p id="email-error-three" class="error-message">Please enter a unique username.</p>
+            </div>
 
-          <div id ="submit-div">
-            <button id ="submit-button" type="submit" disabled>Submit</button>
-            <p id ="submit-error" class = "error-message">This friend group has already been created.</p>
-          </div>
-        
-        </form>
+            <div id="submit-div">
+              <button id="submit-button" type="submit" disabled>Submit</button>
+              <p id="submit-error" class="error-message">This friend group has already been created.</p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
-  </body>
-  
-<script>
-    document.getElementById("add-friends").addEventListener("click", ()=>{
-      document.getElementById("friend-overlay").style.display = "flex";
-      
-    })
+    <script src="script.js"></script>
+    <script>
+    
+    
+      document.addEventListener('DOMContentLoaded', function(){
+    	  checkLoginStatus()
+    	  const bar = document.getElementById('friends-bar');
+    	  const userEmail = localStorage.getItem('loggedInUser');
+		  if (userEmail) {
+				  var jsonData = {
+	"username": userEmail
+			        }
 
-    document.getElementById("close-button").addEventListener("click", ()=>{
-      document.getElementById("friend-overlay").style.display = "none";
-      const inputs = document.querySelectorAll(".input");
-      const errors = document.querySelectorAll(".error-message");
-      for(let i = 0; i < inputs.length; i++){
-        inputs[i].value = "";
-        errors[i].style.display = "none";
-      }
-    })
-
-    const nameInput = document.getElementById("name-input");
-    const emOneInput = document.getElementById("email-input-one");
-    const emTwoInput = document.getElementById("email-input-two");
-    const emThreeInput = document.getElementById("email-input-three");
-    let nameValid = false, emOneValid = false, emTwoValid = false, emThreeValid = false;
-
-    const nameError = document.getElementById("name-error");
-    const emOneError = document.getElementById("email-error-one");
-    const emTwoError = document.getElementById("email-error-two");
-    const emThreeError = document.getElementById("email-error-three");
-
-    nameInput.addEventListener("input", ()=>{
-      nameError.style.display = "none";
-      nameValid = true;
-      if(!nameInput.validity.valid){
-        nameError.style.display = "block";
-        nameValid = false;
-      }
-      checkSubmit();
-    })
-
-    emOneInput.addEventListener("input", ()=>{
-      emOneError.style.display = "none";
-    })
-
-    emOneInput.addEventListener("blur", ()=>{
-      emOneValid = true;
-      if(!emOneInput.validity.valid){
-        emOneError.style.display = "block";
-        emOneValid = false;
-      }
-      checkSubmit();
-    })
-
-    emTwoInput.addEventListener("input", ()=>{
-      emTwoError.style.display = "none";
-    })
-
-    emTwoInput.addEventListener("blur", ()=>{
-      emTwoValid = true;
-      if(!emTwoInput.validity.valid){
-        emTwoError.style.display = "block";
-        emTwoValid = false;
-      }
-      checkSubmit();
-    })
-
-    emThreeInput.addEventListener("input", ()=>{
-      emThreeError.style.display = "none";
-    })
-
-    emThreeInput.addEventListener("blur", ()=>{
-      emThreeValid = true;
-      if(!emThreeInput.validity.valid){
-        emThreeError.style.display = "block";
-        emThreeValid = false;
-      }
-      checkSubmit();
-    })
-
-    function checkSubmit(){
-      if(emThreeValid && emTwoValid && emOneValid && nameValid){
-      document.getElementById("submit-button").disabled = false;
-      }
-      else{
-        document.getElementById("submit-button").disabled = true;
-      }
-    }
-  
-    function submit(e){
-      e.preventDefault();
-      var jsonData = {
-        "groupName" : nameInput.value.trim(),
-        "emailOne" : emOneInput.value.trim(),
-        "emailTwo" : emTwoInput.value.trim(),
-        "emailThree" : emThreeInput.value.trim()
-      }
-
-      fetch("/register", {method: "POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(jsonData)})
-      .then(response => {
-        return response.json();
+      fetch("getFriendsLocation", {method: "POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(jsonData)})
+		    
+		    .then(res => res.json())
+		    .then(friendsArray => {
+		      bar.innerHTML = '';
+		      if (friendsArray.length === 0) {
+		        bar.textContent = 'You have no friends yet.';
+		        return;
+		      }
+		      friendsArray.forEach(obj => {
+		        const btn = document.createElement('button');
+		        btn.className = 'group';
+		        btn.textContent = obj.latitude + " " + obj.longitude + " " + obj.username;
+		 
+		        bar.appendChild(btn);
+		      });
+		    })
+		    .catch(err => {
+		      console.error(err);
+		      bar.textContent = 'Could not load friends.';
+		    });
+		  }
       })
-      .then(result =>{
-        if(result.added === true){
-          document.getElementById("friend-overlay").style.display = "none";
-          const inputs = document.querySelectorAll(".input");
-          for(let i = 0; i < inputs.length; i++){
-            inputs[i].value = "";
-          }
-          const bar = document.getElementById("friends-bar");
-          const newGroup = document.createElement("button");
-          newGroup.className = "group";
-          newGroup.textContent = nameInput.value.trim();
-          bar.appendChild(newGroup);
+      
+      document.getElementById("add-friends").addEventListener("click", ()=>{
+        document.getElementById("friend-overlay").style.display = "flex";
+      })
+
+      document.getElementById("close-button").addEventListener("click", ()=>{
+        document.getElementById("friend-overlay").style.display = "none";
+        const inputs = document.querySelectorAll(".input");
+        const errors = document.querySelectorAll(".error-message");
+        for(let i = 0; i < inputs.length; i++){
+          inputs[i].value = "";
+          errors[i].style.display = "none";
+        }
+      })
+
+      const emOneInput = document.getElementById("email-input-one");
+      const emTwoInput = document.getElementById("email-input-two");
+      const emThreeInput = document.getElementById("email-input-three");
+      let nameValid = false, emOneValid = false, emTwoValid = false, emThreeValid = false;
+
+      const emOneError = document.getElementById("email-error-one");
+      const emTwoError = document.getElementById("email-error-two");
+      const emThreeError = document.getElementById("email-error-three");
+
+      emOneInput.addEventListener("input", ()=>{
+        emOneError.style.display = "none";
+      })
+
+      emOneInput.addEventListener("blur", ()=>{
+        emOneValid = true;
+        if(!emOneInput.validity.valid){
+          emOneError.style.display = "block";
+          emOneValid = false;
+        }
+        checkSubmit();
+      })
+
+      emTwoInput.addEventListener("input", ()=>{
+        emTwoError.style.display = "none";
+      })
+
+      emTwoInput.addEventListener("blur", ()=>{
+        emTwoValid = true;
+        if(!emTwoInput.validity.valid){
+          emTwoError.style.display = "block";
+          emTwoValid = false;
+        }
+        checkSubmit();
+      })
+
+      emThreeInput.addEventListener("input", ()=>{
+        emThreeError.style.display = "none";
+      })
+
+      emThreeInput.addEventListener("blur", ()=>{
+        emThreeValid = true;
+        if(!emThreeInput.validity.valid){
+          emThreeError.style.display = "block";
+          emThreeValid = false;
+        }
+        checkSubmit();
+      })
+
+      function checkSubmit(){
+        if(emThreeValid && emTwoValid && emOneValid){
+          document.getElementById("submit-button").disabled = false;
         }
         else{
           document.getElementById("submit-button").disabled = true;
-          document.getElementById("submit-error").style.display = "block";
         }
-      })
-    }
+      }
+    
+      function submit(e){
+        e.preventDefault();
+        var jsonData = {
+        		"groupName" : document.getElementById("group-name").value.trim(),
+          "emailOne" : emOneInput.value.trim(),
+          "emailTwo" : emTwoInput.value.trim(),
+          "emailThree" : emThreeInput.value.trim()
+        }
+		console.log(jsonData);
+        fetch("registerFriendGroup", {method: "POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(jsonData)})
+        .then(response => {
+          return response.json();
+        })
+        .then(result =>{
+          if(result.added === true){
+            document.getElementById("friend-overlay").style.display = "none";
+            const inputs = document.querySelectorAll(".input");
+            for(let i = 0; i < inputs.length; i++){
+              inputs[i].value = "";
+            }
+            const bar = document.getElementById("friends-bar");
+            const newGroup = document.createElement("button");
+            newGroup.className = "group";
+            newGroup.textContent = "My Friends";
+            bar.appendChild(newGroup);
+            window.location.href = "./map.html";
+          }
+          else{
+            document.getElementById("submit-button").disabled = true;
+            /* document.getElementById("submit-error").style.display = "block"; */
+          }
+        })
+      }
 
-    document.getElementById("submit-button").addEventListener("submit", submit);
-
-
-</script>
-
+      document.getElementById("add-group").addEventListener("submit", submit);
+      
+      function checkLoginStatus() {
+          console.log('Checking login status...');
+          const loggedInUser = localStorage.getItem('loggedInUser');
+          console.log('Logged in user:', loggedInUser);
+          
+          const authLinks = document.querySelectorAll('.auth-links');
+          const userWelcome = document.querySelector('.user-welcome');
+          const logoutLink = document.querySelector('.logout-link');
+          const usernameSpan = document.getElementById('username');
+          
+          if (loggedInUser) {
+              // User is logged in
+              console.log('User is logged in as:', loggedInUser);
+              if (authLinks) authLinks.forEach(link => link.style.display = 'none');
+              if (userWelcome) userWelcome.style.display = 'inline-block';
+              if (logoutLink) logoutLink.style.display = 'inline-block';
+              if (usernameSpan) usernameSpan.textContent = loggedInUser;
+              
+              // Set up logout functionality
+              const logoutBtn = document.getElementById('logout-btn');
+              if (logoutBtn) {
+                  logoutBtn.addEventListener('click', function(e) {
+                      e.preventDefault();
+                      localStorage.removeItem('loggedInUser');
+                      window.location.reload();
+                  });
+              }
+          } else {
+              // User is not logged in
+              console.log('User is not logged in');
+              if (authLinks) authLinks.forEach(link => link.style.display = 'inline-block');
+              if (userWelcome) userWelcome.style.display = 'none';
+              if (logoutLink) logoutLink.style.display = 'none';
+          }
+      }
+      
+      
+    </script>
+  </body>
 </html>
 
 

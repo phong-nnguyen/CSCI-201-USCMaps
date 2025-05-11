@@ -46,9 +46,9 @@ public class USCLocationScraper {
 
 
     // db stuff - check these match setup
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/trojanMapsDb";
+    private static final String DB_URL = "jdbc:mysql://localhost/trojanMapsDB";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "root";
+    private static final String DB_PASSWORD = "Philbert1108";
     private static final String DB_TABLE = "locations";
     private static final String COL_CODE = "location_code";
     private static final String COL_NAME = "location_name";

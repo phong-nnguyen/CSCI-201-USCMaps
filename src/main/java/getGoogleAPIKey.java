@@ -44,7 +44,7 @@ public class getGoogleAPIKey extends HttpServlet {
 		try {
 			// Necessary due to newer version, referenced here: https://stackoverflow.com/questions/63122449/class-fornamecom-mysql-jdbc-driver-returns-a-classnotfound-exception-in-ecli/63122627#63122627
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			DBConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/trojanMapsDb", "root", "root");
+			DBConnection = DriverManager.getConnection("jdbc:mysql://localhost/trojanMapsDB", "root", "Philbert1108");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -52,13 +52,15 @@ public class getGoogleAPIKey extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		String tokenQuery = "SELECT token FROM googleMapKey WHERE keyID=1";
+		String tokenQuery = "SELECT keyVal FROM googleMapKey WHERE keyID=1";
 		String token = null;
 
 		try {
 			Statement tokenStatement = DBConnection.createStatement();
 			ResultSet returnQuery = tokenStatement.executeQuery(tokenQuery);
-			token = returnQuery.getString("token");
+			if (returnQuery.next()) {
+				token = returnQuery.getString("keyVal");
+			}
 			tokenStatement.close();
 			returnQuery.close();
 			DBConnection.close();
