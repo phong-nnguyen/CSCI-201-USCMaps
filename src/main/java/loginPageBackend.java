@@ -5,14 +5,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.*;
+import java.util.Queue;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
 
 @WebServlet("/loginPageBackend")
 public class loginPageBackend extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     private static final Map<String, String> credentialCache = new ConcurrentHashMap<>();
+    private static final Queue<String> requestQueue = new ConcurrentLinkedQueue<>();
+
 
 	@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,6 +39,7 @@ public class loginPageBackend extends HttpServlet {
             String email  = request.getParameter("emailAdress");
             String phoneNumber  = request.getParameter("phoneNumber");
             msg = addUserToDataBase(user, pass, firstName, lastName, email, phoneNumber);
+            requestQueue.offer(logValue + ":" + user);
         }
         else if ("Forgot Password".equals(logValue)) {
         }
